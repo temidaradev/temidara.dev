@@ -19,6 +19,13 @@ a{
 #horizontal{
     border: 1px solid white;
 }
+#special{
+    text-align: center;
+}
+
+#helpme{
+    border: 0.1px groove white;
+}
 
 p{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
