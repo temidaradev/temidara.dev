@@ -211,7 +211,7 @@ class Github {
 }
 
 export default new Github(
-  import.meta.env.VITE_GITHUB_ACCESS_TOKEN_PART1 + import.meta.env.VITE_GITHUB_ACCESS_TOKEN_PART2,
+  import.meta.env.VITE_GITHUB_ACCESS_TOKEN_PART1,
   import.meta.env.VITE_GITHUB_OWNER,
   import.meta.env.VITE_GITHUB_REPO,
 );

@@ -31,7 +31,7 @@ export default function Projects() {
       setProjects(
         list
           .map(ProjectModel.from)
-          .filter((p) => p.stargazersCount > 0 && !p.archived && !p.disabled)
+          .filter((p) => p.stargazersCount >= 0 && !p.archived && !p.disabled)
           .sort((a, b) => b.stargazersCount - a.stargazersCount),
       );
     }, []),

@@ -3,17 +3,14 @@ import mdLight from 'github-markdown-css/github-markdown-light.css?raw';
 import { changeLanguage } from 'i18next';
 import prismLight from 'prism-themes/themes/prism-vs.css?raw';
 import prismDark from 'prism-themes/themes/prism-vsc-dark-plus.css?raw';
-import React, { useCallback, useEffect } from 'react';
+import { useCallback, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link, NavLink, Outlet } from 'react-router-dom';
-import tw, { css, styled } from 'twin.macro';
-import IconPosts from '~icons/ri/article-line';
+import tw, { styled } from 'twin.macro';
 import IconProjects from '~icons/ri/function-line';
 import IconGithub from '~icons/ri/github-line';
-import IconLanguage from '~icons/ri/global-line';
 import IconEmail from '~icons/ri/mail-line';
 import IconDark from '~icons/ri/moon-line';
-import IconSnippets from '~icons/ri/sticky-note-line';
 import IconLight from '~icons/ri/sun-line';
 
 import useDarkMode, { DarkModeValueContext } from '../hooks/use-dark-mode';
@@ -95,14 +92,6 @@ export default function Main() {
             </TitleLink>
 
             <Nav>
-              <NavLinkItem to="/posts">
-                <IconPosts tw="inline lg:hidden" />
-                <span tw="hidden lg:inline">{t('tab.posts')}</span>
-              </NavLinkItem>
-              <NavLinkItem to="/snippets">
-                <IconSnippets tw="inline lg:hidden" />
-                <span tw="hidden lg:inline">{t('tab.snippets')}</span>
-              </NavLinkItem>
               <NavLinkItem to="/projects">
                 <IconProjects tw="inline lg:hidden" />
                 <span tw="hidden lg:inline">{t('tab.projects')}</span>
@@ -115,9 +104,6 @@ export default function Main() {
               </NavItem>
               <NavItem href={githubUrl} target="_blank">
                 <IconGithub />
-              </NavItem>
-              <NavItem onClick={onToggleLanguage}>
-                <IconLanguage />
               </NavItem>
               <NavItem onClick={onToggleDarkMode}>
                 {darkModeEnabled ? <IconLight /> : <IconDark />}

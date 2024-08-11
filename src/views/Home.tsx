@@ -39,7 +39,7 @@ export default function Home() {
       <Center>
         <Title>{t('intro.title')}</Title>
         <Description>{t('intro.description')}</Description>
-        <Link to="/posts">
+        <Link to="/projects">
           <LinkButton>
             <span>{t('intro.link')}</span>
             <IconArrowRight />

@@ -6,10 +6,13 @@ import IconStar from '~icons/octicon/star-16';
 import IconDefault from '~icons/ri/code-s-slash-line';
 import IconCss from '~icons/ri/css3-line';
 import IconHtml from '~icons/ri/html5-line';
-import IconVue from '~icons/ri/vuejs-line';
 import IconJs from '~icons/teenyicons/javascript-outline';
 import IconTs from '~icons/teenyicons/typescript-outline';
-import IconCS from '~icons/vscode-icons/file-type-csharp';
+import IconAstro from '~icons/vscode-icons/file-type-astro';
+import IconGo from '~icons/vscode-icons/file-type-go';
+import IconPHP from '~icons/vscode-icons/file-type-php';
+import IconPython from '~icons/vscode-icons/file-type-python';
+import IconRust from '~icons/vscode-icons/file-type-rust';
 
 import ProjectModel from '../models/ProjectModel';
 
@@ -56,8 +59,11 @@ const iconMap: Record<string, IconDetail> = {
   JavaScript: { component: IconJs, color: '#FCD002' },
   HTML: { component: IconHtml, color: '#FF3C41' },
   CSS: { component: IconCss, color: '#10BDFF' },
-  Vue: { component: IconVue, color: '#41B883' },
-  'C#': { component: IconCS, color: '#368833' },
+  Go: { component: IconGo, color: '#00ADD8' },
+  Rust: { component: IconRust, color: '#000F00' },
+  Python: { component: IconPython, color: '#306998' },
+  PHP: { component: IconPHP, color: '#777BB4' },
+  Astro: { component: IconAstro, color: '#0D1117' },
 };
 
 export type ProjectItemProps = {
@@ -66,7 +72,6 @@ export type ProjectItemProps = {
 
 export default function ProjectItem(props: ProjectItemProps) {
   const { project } = props;
-
   const icon = iconMap[props.project.language] ?? iconMap.default;
 
   return (
