@@ -97,6 +97,11 @@ export default function Main() {
                 <span tw="hidden lg:inline">{t('tab.projects')}</span>
               </NavLinkItem>
 
+              <NavLinkItem to="/experiences">
+                <IconProjects tw="inline lg:hidden" />
+                <span tw="hidden lg:inline">{t('tab.experiences')}</span>
+              </NavLinkItem>
+
               <Divider />
 
               <NavItem href={`mailto:${email}`}>
