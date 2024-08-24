@@ -44,23 +44,31 @@ export default function Projects() {
 
   return (
     <Wrapper>
-      <Title>{t('projects.title')}</Title>
+      <Title>{t('experiences.title')}</Title>
 
-      {loadingProjects && (
-        <List>
-          {Array.from({ length: 10 }).map((_, i) => (
-            <ProjectSkeleton key={i} />
-          ))}
+      <List>
+        <div>
+          <h1>Tools</h1>
+        </div>
+        <div>  
+          <h1>Technologies</h1>
+        </div>
+        <div> 
+          <h1>Languages</h1>
+        </div>
+        <div>
+          <h1>Frontend Frameworks</h1>
+        </div>  
+        <div>
+          <h1>Backend Frameworks</h1>
+        </div>
+        <div>  
+          <h1>Libraries</h1>
+        </div>
+        <div>    
+          <h1>Databases</h1>
+        </div> 
         </List>
-      )}
-
-      {!!projects.length && (
-        <List>
-          {projects.map((project) => (
-            <ProjectItem key={project.id} project={project} />
-          ))}
-        </List>
-      )}
     </Wrapper>
   );
 }
