@@ -48,7 +48,8 @@ export default function Projects() {
 
       <List>
         <div>
-          <h1>Tools</h1>
+          <h2>Tools</h2>
+          <p>Git</p>
         </div>
         <div>  
           <h1>Technologies</h1>
