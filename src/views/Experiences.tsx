@@ -9,7 +9,7 @@ const Title = tw.h2`text-2xl text-slate-700`;
 const List = tw.div`mt-8 grid grid-cols-1 lg:grid-cols-2 gap-2`;
 
 const ExpComp = tw.div`flex gap-3 p-3 border border-white rounded-sm`;
-
+// will get from lawrence
 interface Experience {
   language: String;
   yoe: number;
