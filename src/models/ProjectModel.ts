@@ -17,7 +17,7 @@ export default class ProjectModel {
     public disabled: boolean,
     public pushedAt: string,
     public createdAt: string,
-    public updatedAt: string
+    public updatedAt: string,
   ) {}
 
   static from(raw: Repository): ProjectModel {
@@ -36,7 +36,7 @@ export default class ProjectModel {
       raw.disabled,
       raw.pushed_at,
       raw.created_at,
-      raw.updated_at
+      raw.updated_at,
     );
   }
 }

@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "company_name": "A3get.",
+    "job_title": "Frontend Web Developer",
+    "location": "Remote",
+    "start_date": "2024-01-16",
+    "end_date": "2024-06-31",
+    "description": "Built and maintained responsive web applications using ReactJs and Redux for a variety of clients.",
+    "is_current": false
+  },
+  {
+    "id": 2,
+    "company_name": "Black Mental Health Matters.",
+    "job_title": "Backend Engineer",
+    "location": "Remote",
+    "start_date": "2023-10-12",
+    "end_date": "2024-04-31",
+    "description": "Engineered and maintained scalable backend systems using ExpressJs for mental health initiatives.",
+    "is_current": false
+  },
+  {
+    "id": 3,
+    "company_name": "Phsps Apps.",
+    "job_title": "Backend Developer Intern",
+    "location": "Lagos, NG",
+    "start_date": "2021-08-01",
+    "end_date": "2023-06-31",
+    "description": "Developed a database performance monitoring system with automated query analysis and custom dashboards for real-time visualization.",
+    "is_current": false
+  },
+  {
+    "id": 4,
+    "company_name": "STGEI INTERNATIONAL.",
+    "job_title": "Frontend Developer Intern",
+    "location": "Lagos, NG",
+    "start_date": "2019-02-01",
+    "end_date": "2020-03-31",
+    "description": "Did quite a lot of stuff",
+    "is_current": false
+  }
+]
