@@ -4,22 +4,22 @@ import tw, { styled } from 'twin.macro';
 import ExperienceModel from '../models/ExperienceModel';
 
 const Wrapper = tw.div`
-  relative p-3 pl-14
+  relative p-0 pl-0
   bg-white dark:bg-gray-900 rounded-md ring-1 ring-slate-600/5 shadow-sm hover:shadow-lg
   transition-all duration-300
 `;
 
-const Icon = styled.div`
-  ${tw`
-    absolute top-3 left-3 w-9 h-9 rounded-md
-    flex items-center justify-center overflow-hidden font-bold
-  `}
+// const Icon = styled.div`
+//   ${tw`
+//     absolute top-3 left-3 w-9 h-9 rounded-md
+//     flex items-center justify-center overflow-hidden font-bold
+//   `}
 
-  &::before {
-    ${tw`absolute top-0 left-0 block [content:''] w-full h-full opacity-20`}
-    background-color: currentColor;
-  }
-`;
+//   &::before {
+//     ${tw`absolute top-0 left-0 block [content:''] w-full h-full opacity-20`}
+//     background-color: currentColor;
+//   }
+// `;
 
 const Title = tw.a`block text-blue-500 truncate`;
 
@@ -27,7 +27,7 @@ const Description = styled.div`
   ${tw`mt-2 text-slate-400 text-sm overflow-hidden`}
 
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
 `;
 
@@ -48,21 +48,12 @@ export default function ExperienceItem(props: ExperienceItemProps) {
 
   return (
     <Wrapper>
-      <Icon>
+      {/* <Icon>
         <span>{experience?.companyName.charAt(0)}</span>
-      </Icon>
+      </Icon> */}
       <Company>
-        {experience?.companyName}{' '}
-        <Location className="text-slate-400">{experience.location}</Location>
+        {experience?.companyName} <Location className="text-slate-400">{experience.hl}</Location>
       </Company>
-      <Title href="#">{experience.jobTitle}</Title>
-      <Description>{experience.description}</Description>
-      <CountList>
-        <CountItem>
-          {new Date(experience.startDate).toLocaleDateString()} -{' '}
-          {experience.endDate ? new Date(experience.endDate).toLocaleDateString() : 'Present'}
-        </CountItem>
-      </CountList>
     </Wrapper>
   );
 }
