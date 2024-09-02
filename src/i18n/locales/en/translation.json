@@ -1,5 +1,6 @@
 {
   "tab": {
+    "experiences": "Experiences",
     "projects": "Projects"
   },
   "intro": {
@@ -15,5 +16,8 @@
   },
   "projects": {
     "title": "Some projects"
+  },
+  "experiences": {
+    "title": "Some skills"
   }
 }

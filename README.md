@@ -1,4 +1,4 @@
-# temidara's Blog
+# Temidaras's Blog
 
 Personal blog site based on github issues.
 
