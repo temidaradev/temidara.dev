@@ -21,11 +21,15 @@
         ? "opacity-full pointer-events-auto"
         : "pointer-events-none opacity-0")}
   >
-    <button>
-      <i class="fa-solid fa-arrow-up"> </i>
+    <button
+      on:click={goTop}
+      class="ml-auto rounded-full bg-slate-900 text-violet-400 px-3 sm:px-4 hover:bg-slate-800 cursor-pointer"
+    >
+      <i class="fa-solid fa-arrow-up grid place-items-center aspect-square">
+      </i>
     </button>
   </div>
-  <Header></Header>
+  <Header {y} />
   <slot></slot>
   <Footer>s</Footer>
 </div>
