@@ -18,7 +18,7 @@
         <span class="poppins text-violet-400">Fullstack Developer</span>
       </h2>
       <p class="text-base text-center sm:text-lg md:text-cl">
-        My <span class="text-violet-400">Favorite Tech</span>
+        <span class="text-violet-400">Techs</span> That I Use
       </p>
       <a
         href="https://x.com/temidaradev"
@@ -51,9 +51,14 @@
     <a
       href="https://github.com/temidaradev"
       target="_blank"
-      class="mx-auto px-4 py-2 rounded-md border border-solid border-white flex items-center gap-2 -mb-4 sm:-mb-0 -mt-10 hover:border-violet-700 duration-200"
+      class="blueShadow mx-auto lg:mr-auto text-base sm:text-lg md:text-xl poppins relative overflow-hidden px-6 py-3 group rounded-full bg-white text-slate-950 cursor-pointer"
     >
-      <i class="fa-brands fa-github"></i>
+      <div
+        class="absolute top-0 right-full w-full h-full bg-violet-400 opacity-20 group-hover:translate-x-full z-0 duration-200"
+      ></div>
+      <h4 class="relative z-9">
+        Check My Github <i class="fa-brands fa-github"></i>
+      </h4>
     </a>
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-10">
       <!-- <Step step={steps[0]}></Step>
