@@ -1,9 +1,10 @@
 <script>
   import Step from './Step.svelte';
+  import Techs from './Techs.svelte';
 
   let steps = [
-    { name: 'LidTek', icon: 'fa-brands fa-github' },
-    { name: 'Experiences', icon: 'fa-solid fa-briefcase' },
+    { name: 'LidTek', icon: 'fa-brands fa-github', href: 'https://lidtek.gamu.group' },
+    { name: 'Experiences', icon: 'fa-solid fa-briefcase', href: '#experinces' },
   ];
 
   let benefits = [
@@ -12,6 +13,31 @@
       description:
         'I taught myself to code using free online resources and problem solving involved in development. I started with C# but learned C# in 5th grade. When my high school entrance exam came, I stopped programming and started again in high school. I started with Golang and I am still learning Golang and I want to be a full stack developer',
     },
+  ];
+
+  const tools = [
+    { name: 'Git', yoe: '2 years', href: 'https://git-scm.com' },
+    { name: 'Vite', yoe: 'learning', href: 'https://vitejs.dev' },
+    { name: 'Docker', yoe: 'learning', href: '' },
+    { name: 'Vercel', yoe: 'learning', href: '' },
+  ];
+  const languages = [
+    { name: 'Golang', yoe: '1 years + learning', href: '' },
+    { name: 'C', yoe: 'learning', href: '' },
+    { name: 'C++', yoe: 'learning', href: '' },
+    { name: 'GDScript', yoe: 'learning', href: '' },
+    { name: 'JavaScript', yoe: 'learning', href: '' },
+    { name: 'TypeScript', yoe: 'learning', href: '' },
+  ];
+  const frontendframeworks = [
+    { name: 'React', yoe: 'learning', href: '' },
+    { name: 'SvelteKit', yoe: 'learning', href: '' },
+  ];
+  const backendframeworks = [{ name: 'go-fiber', yoe: 'learning', href: '' }];
+  const libraries = [{ name: 'TailwindCSS', yoe: 'learning', href: '' }];
+  const databases = [
+    { name: 'Postgres', yoe: 'learning', href: '' },
+    { name: 'SQLite', yoe: '', href: '' },
   ];
 </script>
 
@@ -22,23 +48,100 @@
         Hi! I'm <span class="poppins text-violet-400">Temidara</span> <br />
         Wants To Be A
         <span class="poppins text-violet-400">Fullstack Developer</span>
+        <div class="flex flex-col"></div>
       </h2>
       <p class="text-base text-center sm:text-lg md:text-cl">
         <span class="text-violet-400">Techs</span> That I Use
       </p>
-      <a
-        href="https://x.com/temidaradev"
-        target="_blank"
-        class="blueShadow mx-auto lg:mr-auto text-base sm:text-lg md:text-xl poppins relative overflow-hidden px-6 py-3 group rounded-full bg-white text-slate-950 cursor-pointer"
-      >
-        <div
-          class="absolute top-0 right-full w-full h-full bg-violet-400 opacity-20 group-hover:translate-x-full z-0 duration-200"
-        ></div>
-        <h4 class="relative z-9">Get In Touch &rarr;</h4>
-      </a>
+      <div class="flex flex-col">
+        <h6 class="text-2xl">Tools</h6>
+        <div class="flex flex-row gap-1">
+          {#each tools as { name, yoe, href }}
+            <a
+              {href}
+              target="_blank"
+              class="px-1 rounded-md border border-solid border-slate-500 hover:border-slate-800 duration-200 flex cursor-pointer"
+            >
+              <p class="poppins text-lg text-slate-300">
+                {name} <span class="text-sm text-slate-500">{yoe}</span>
+              </p>
+            </a>
+          {/each}
+        </div>
+        <h6 class="text-2xl">Languages</h6>
+        <div class="flex flex-row gap-1">
+          {#each languages as { name, yoe, href }}
+            <a
+              {href}
+              target="_blank"
+              class="px-1 rounded-md border border-solid border-slate-500 hover:border-slate-800 duration-200 flex cursor-pointer"
+            >
+              <p class="poppins text-lg text-slate-300">
+                {name} <span class="text-sm text-slate-500">{yoe}</span>
+              </p>
+            </a>
+          {/each}
+        </div>
+        <h6 class="text-2xl">Frontend Frameworks</h6>
+        <div class="flex flex-row gap-1">
+          {#each frontendframeworks as { name, yoe, href }}
+            <a
+              {href}
+              target="_blank"
+              class="px-1 rounded-md border border-solid border-slate-500 hover:border-slate-800 duration-200 flex cursor-pointer"
+            >
+              <p class="poppins text-lg text-slate-300">
+                {name} <span class="text-sm text-slate-500">{yoe}</span>
+              </p>
+            </a>
+          {/each}
+        </div>
+        <h6 class="text-2xl">Backend Frameworks</h6>
+        <div class="flex flex-row gap-1">
+          {#each backendframeworks as { name, yoe, href }}
+            <a
+              {href}
+              target="_blank"
+              class="px-1 rounded-md border border-solid border-slate-500 hover:border-slate-800 duration-200 flex cursor-pointer"
+            >
+              <p class="poppins text-lg text-slate-300">
+                {name} <span class="text-sm text-slate-500">{yoe}</span>
+              </p>
+            </a>
+          {/each}
+        </div>
+        <h6 class="text-2xl">Libraries</h6>
+        <div class="flex flex-row gap-1">
+          {#each libraries as { name, yoe, href }}
+            <a
+              {href}
+              target="_blank"
+              class="px-1 rounded-md border border-solid border-slate-500 hover:border-slate-800 duration-200 flex cursor-pointer"
+            >
+              <p class="poppins text-lg text-slate-300">
+                {name} <span class="text-sm text-slate-500">{yoe}</span>
+              </p>
+            </a>
+          {/each}
+        </div>
+        <h6 class="text-2xl">Databases</h6>
+        <div class="flex flex-row gap-1">
+          {#each databases as { name, yoe, href }}
+            <a
+              {href}
+              target="_blank"
+              class="px-1 rounded-md border border-solid border-slate-500 hover:border-slate-800 duration-200 flex cursor-pointer"
+            >
+              <p class="poppins text-lg text-slate-300">
+                {name} <span class="text-sm text-slate-500">{yoe}</span>
+              </p>
+            </a>
+          {/each}
+        </div>
+      </div>
     </div>
   </section>
-  <section id="projects" class="py-20 lg:py-32 flex flex-col gap-24">
+  <section id="projects" class="flex flex-col gap-24">
     <div class="flex flex-col gap-2 text-center">
       <h6 class="text-lg sm:text-xl md:text-2xl">A few of my creative endeavors</h6>
       <h3 class="font-semibold text-3xl sm:text-4xl md:text-5xl">
