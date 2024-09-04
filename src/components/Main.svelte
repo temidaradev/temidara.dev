@@ -53,9 +53,9 @@
       <p class="text-base text-center sm:text-lg md:text-cl">
         <span class="text-violet-400">Techs</span> That I Use
       </p>
-      <div class="flex flex-col">
+      <div class="flex flex-col sm:-32">
         <h6 class="text-2xl">Tools</h6>
-        <div class="flex flex-row gap-1">
+        <div class="flex flex-wrap flex-row gap-1">
           {#each tools as { name, yoe, href }}
             <a
               {href}
@@ -69,7 +69,7 @@
           {/each}
         </div>
         <h6 class="text-2xl">Languages</h6>
-        <div class="flex flex-row gap-1">
+        <div class="flex flex-wrap flex-row gap-1">
           {#each languages as { name, yoe, href }}
             <a
               {href}
@@ -83,7 +83,7 @@
           {/each}
         </div>
         <h6 class="text-2xl">Frontend Frameworks</h6>
-        <div class="flex flex-row gap-1">
+        <div class="flex flex-wrap flex-row gap-1">
           {#each frontendframeworks as { name, yoe, href }}
             <a
               {href}
@@ -97,7 +97,7 @@
           {/each}
         </div>
         <h6 class="text-2xl">Backend Frameworks</h6>
-        <div class="flex flex-row gap-1">
+        <div class="flex flex-wrap flex-row gap-1">
           {#each backendframeworks as { name, yoe, href }}
             <a
               {href}
@@ -111,7 +111,7 @@
           {/each}
         </div>
         <h6 class="text-2xl">Libraries</h6>
-        <div class="flex flex-row gap-1">
+        <div class="flex flex-wrap flex-row gap-1">
           {#each libraries as { name, yoe, href }}
             <a
               {href}
@@ -125,7 +125,7 @@
           {/each}
         </div>
         <h6 class="text-2xl">Databases</h6>
-        <div class="flex flex-row gap-1">
+        <div class="flex flex-wrap flex-row gap-1">
           {#each databases as { name, yoe, href }}
             <a
               {href}
