@@ -1,49 +1,55 @@
 <script>
-  import Step from './Step.svelte';
-  import Techs from './Techs.svelte';
+  import Step from "./Step.svelte";
+  import Techs from "./Techs.svelte";
 
   let steps = [
-    { name: 'LidTek', icon: 'fa-brands fa-github', href: 'https://lidtek.gamu.group' },
-    { name: 'Experiences', icon: 'fa-solid fa-briefcase', href: '#experinces' },
+    {
+      name: "LidTek",
+      icon: "fa-brands fa-github",
+      href: "https://lidtek.gamu.group",
+    },
+    { name: "Experiences", icon: "fa-solid fa-briefcase", href: "experinces" },
   ];
 
   let benefits = [
     {
-      name: 'a self taught developer',
+      name: "a self taught developer",
       description:
-        'I taught myself to code using free online resources and problem solving involved in development. I started with C# but learned C# in 5th grade. When my high school entrance exam came, I stopped programming and started again in high school. I started with Golang and I am still learning Golang and I want to be a full stack developer',
+        "I taught myself to code using free online resources and problem solving involved in development. I started with C# but learned C# in 5th grade. When my high school entrance exam came, I stopped programming and started again in high school. I started with Golang and I am still learning Golang and I want to be a full stack developer",
     },
   ];
 
   const tools = [
-    { name: 'Git', yoe: '2 years', href: 'https://git-scm.com' },
-    { name: 'Vite', yoe: 'learning', href: 'https://vitejs.dev' },
-    { name: 'Docker', yoe: 'learning', href: '' },
-    { name: 'Vercel', yoe: 'learning', href: '' },
+    { name: "Git", yoe: "2 years", href: "https://git-scm.com" },
+    { name: "Vite", yoe: "learning", href: "https://vitejs.dev" },
+    { name: "Docker", yoe: "learning", href: "" },
+    { name: "Vercel", yoe: "learning", href: "" },
   ];
   const languages = [
-    { name: 'Golang', yoe: '1 years + learning', href: '' },
-    { name: 'C', yoe: 'learning', href: '' },
-    { name: 'C++', yoe: 'learning', href: '' },
-    { name: 'GDScript', yoe: 'learning', href: '' },
-    { name: 'JavaScript', yoe: 'learning', href: '' },
-    { name: 'TypeScript', yoe: 'learning', href: '' },
+    { name: "Golang", yoe: "1 years + learning", href: "" },
+    { name: "C", yoe: "learning", href: "" },
+    { name: "C++", yoe: "learning", href: "" },
+    { name: "GDScript", yoe: "learning", href: "" },
+    { name: "JavaScript", yoe: "learning", href: "" },
+    { name: "TypeScript", yoe: "learning", href: "" },
   ];
   const frontendframeworks = [
-    { name: 'React', yoe: 'learning', href: '' },
-    { name: 'SvelteKit', yoe: 'learning', href: '' },
+    { name: "React", yoe: "learning", href: "" },
+    { name: "SvelteKit", yoe: "learning", href: "" },
   ];
-  const backendframeworks = [{ name: 'go-fiber', yoe: 'learning', href: '' }];
-  const libraries = [{ name: 'TailwindCSS', yoe: 'learning', href: '' }];
+  const backendframeworks = [{ name: "go-fiber", yoe: "learning", href: "" }];
+  const libraries = [{ name: "TailwindCSS", yoe: "learning", href: "" }];
   const databases = [
-    { name: 'Postgres', yoe: 'learning', href: '' },
-    { name: 'SQLite', yoe: '', href: '' },
+    { name: "Postgres", yoe: "learning", href: "" },
+    { name: "SQLite", yoe: "", href: "" },
   ];
 </script>
 
 <main class="flex flex-col flex-1 p-4">
   <section id="introPage" class="grid grid-cols-1 py-8 sm:py-14">
-    <div class="flex flex-col lg:justify-center text-center lg:text-left gap-6 md:gap-8 lg:gap-10">
+    <div
+      class="flex flex-col lg:justify-center text-center lg:text-left gap-6 md:gap-8 lg:gap-10"
+    >
       <h2 class="font-semibold text-center text-4xl sm:text-5xl md:text-6xl">
         Hi! I'm <span class="poppins text-violet-400">Temidara</span> <br />
         Wants To Be A
@@ -143,7 +149,9 @@
   </section>
   <section id="projects" class="flex flex-col gap-24">
     <div class="flex flex-col gap-2 text-center">
-      <h6 class="text-lg sm:text-xl md:text-2xl">A few of my creative endeavors</h6>
+      <h6 class="text-lg sm:text-xl md:text-2xl">
+        A few of my creative endeavors
+      </h6>
       <h3 class="font-semibold text-3xl sm:text-4xl md:text-5xl">
         Curious To <span class="poppins text-violet-400">See</span> My Work?
       </h3>
@@ -159,14 +167,15 @@
     <div class="grid grid-cols-2 gap-12 lg:gap-10">
       <Step step={steps[0]}>
         <p>
-          Making a fun multiplayer drawing game using <strong class="text-violet-400"
-            >Golang, Svelte, and WebRTC!</strong
+          Making a fun multiplayer drawing game using <strong
+            class="text-violet-400">Golang, Svelte, and WebRTC!</strong
           >
         </p>
       </Step>
       <Step step={steps[1]}>
         <p>
-          You can check my past experiences by clicking <strong class="text-violet-400">Here</strong
+          You can check my past experiences by clicking <strong
+            class="text-violet-400">Here</strong
           >!!!
         </p>
       </Step>
@@ -184,11 +193,15 @@
         A Bit <span class="poppins text-violet-400">About</span> Me
       </h3>
     </div>
-    <p class="mx-auto poppins font-semibold text-lg sm:text-xl md:text-2xl">I am . . .</p>
+    <p class="mx-auto poppins font-semibold text-lg sm:text-xl md:text-2xl">
+      I am . . .
+    </p>
     <div class="flex flex-col gap-20 w-full mx-auto max-w-[800px]">
       {#each benefits as benefit, index}
         <div class="flex gap-6 sm:gap-8">
-          <p class="poppins text-4xl sm:text-5xl md:text-6xl text-slate-500 font-semibold">
+          <p
+            class="poppins text-4xl sm:text-5xl md:text-6xl text-slate-500 font-semibold"
+          >
             0{index + 1}
           </p>
           <div class="flex flex-col gap-6 sm:gap-8">
