@@ -8,6 +8,11 @@
       icon: "fa-brands fa-github",
       href: "https://lidtek.gamu.group",
     },
+    {
+      name: "Drawniverse",
+      icon: "fa-brands fa-github",
+      href: "https://drawniverse.gamu.group",
+    },
     { name: "Experiences", icon: "fa-solid fa-briefcase", href: "experinces" },
   ];
 
@@ -57,7 +62,7 @@
         <div class="flex flex-col"></div>
       </h2>
       <p class="text-base text-center sm:text-lg md:text-cl">
-        <span class="text-violet-400">Techs</span> That I Use
+        <span class="text-violet-400">Techs</span> That I Use And Learn
       </p>
       <div class="flex flex-col sm:-32">
         <h6 class="text-2xl">Tools</h6>
@@ -164,15 +169,20 @@
       <i class="fa-brands fa-github"></i>
       <p>Check My Github</p>
     </a>
-    <div class="grid grid-cols-2 gap-12 lg:gap-10">
+    <div class="grid grid-cols-3 gap-12 lg:gap-10">
       <Step step={steps[0]}>
+        <p>
+          Organization of Our <strong class="text-violet-400">Duo</strong>Team
+        </p>
+      </Step>
+      <Step step={steps[1]}>
         <p>
           Making a fun multiplayer drawing game using <strong
             class="text-violet-400">Golang, Svelte, and WebRTC!</strong
           >
         </p>
       </Step>
-      <Step step={steps[1]}>
+      <Step step={steps[2]}>
         <p>
           You can check my past experiences by clicking <strong
             class="text-violet-400">Here</strong
