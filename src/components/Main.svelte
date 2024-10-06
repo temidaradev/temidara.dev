@@ -169,7 +169,7 @@
       <i class="fa-brands fa-github"></i>
       <p>Check My Github</p>
     </a>
-    <div class="grid grid-cols-3 gap-12 lg:gap-10">
+    <div class="grid grid-cols-3 gap-12 lg:gap-10 md:gap-8 sm:gap-6">
       <Step step={steps[0]}>
         <p>
           Organization of Our <strong class="text-violet-400">Duo</strong>Team
