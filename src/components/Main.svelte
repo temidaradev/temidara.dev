@@ -42,6 +42,11 @@
       yoe: "learning",
       href: "https://en.wikipedia.org/wiki/C%2B%2B",
     },
+    {
+      name: "C#",
+      yoe: "Not using anymore",
+      href: "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)",
+    },
     { name: "GDScript", yoe: "learning", href: "https://gdscript.com" },
     { name: "JavaScript", yoe: "learning", href: "https://www.javascript.com" },
     {
