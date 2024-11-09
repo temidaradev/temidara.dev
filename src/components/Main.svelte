@@ -13,7 +13,11 @@
       icon: "fa-brands fa-github",
       href: "https://drawniverse.gamu.group",
     },
-    { name: "Experiences", icon: "fa-solid fa-briefcase", href: "experinces" },
+    {
+      name: "Experiences",
+      icon: "fa-solid fa-briefcase",
+      href: "/experiences",
+    },
   ];
 
   let benefits = [

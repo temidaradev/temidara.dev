@@ -2,13 +2,15 @@
   export let y;
 
   let tabs = [
-    { name: 'Projects', link: '#projects' },
-    { name: 'About Me', link: '#about' },
+    { name: "Projects", link: "#projects" },
+    { name: "About Me", link: "#about" },
     // {name: 'project', '#projects'},
   ];
 </script>
 
-<header class="sticky z-[10] top-0 duration-200 px-6 py-6 flex items-center justify-between">
+<header
+  class="sticky z-[10] top-0 duration-200 px-6 py-6 flex items-center justify-between"
+>
   <h1 class="font-medium">
     <b class="font-bold poppins">Temidara</b>
   </h1>
