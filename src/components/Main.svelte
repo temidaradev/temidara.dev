@@ -201,7 +201,7 @@
     <div class="grid grid-cols-3 gap-12 lg:gap-8 md:gap-4 sm:gap-2">
       <Step step={steps[0]}>
         <p>
-          Organization of Our <strong class="text-violet-400">Duo</strong>Team
+          Organization of Our <strong class="text-violet-400">Duo</strong> Team
         </p>
       </Step>
       <Step step={steps[1]}>

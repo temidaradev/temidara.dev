@@ -9,9 +9,9 @@
     <h3 class="font-semibold text-m sm:text-l md:text-xl">
       Im currently working for <a href="https://github.com/jinchuugames"
         >jinchuugames</a
-      > as game developer. By using GDScript
+      > as game developer. Developing a game by using GDScript.
     </h3>
     <h3 class="text-s sm:text-m md:text-l">September 2024 - Still</h3>
-    <hr class="h-1.5 my-1 bg-gray-200 border-0 dark:bg-violet-700" />
+    <hr class="h-1.5 my-2 bg-gray-200 border-0 dark:bg-violet-700" />
   </div>
 </main>
