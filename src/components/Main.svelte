@@ -26,6 +26,11 @@
       description:
         "I taught myself to code using free online resources and problem solving involved in development. I started with C# but learned C# in 5th grade. When my high school entrance exam came, I stopped programming and started again in high school. I started with Golang and I am still learning Golang and I want to be a full stack developer",
     },
+    {
+      name: "a curious person",
+      description:
+        "I have curiosity on other things, not only coding... I also like playing electric guitar and mathematics at all and I love searching about human psychology and I love playing games!",
+    },
   ];
 
   const tools = [
