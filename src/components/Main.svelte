@@ -34,13 +34,17 @@
   ];
 
   const tools = [
-    { name: "Git", yoe: "2 years", href: "https://git-scm.com" },
+    { name: "Git", yoe: "3 years", href: "https://git-scm.com" },
     { name: "Vite", yoe: "learning", href: "https://vitejs.dev" },
-    { name: "Docker", yoe: "learning", href: "https://www.docker.com" },
+    {
+      name: "Docker",
+      yoe: "1 years + learning",
+      href: "https://www.docker.com",
+    },
     { name: "Vercel", yoe: "learning", href: "https://vercel.com" },
   ];
   const languages = [
-    { name: "Golang", yoe: "1 years + learning", href: "https://go.dev" },
+    { name: "Golang", yoe: "2 years", href: "https://go.dev" },
     {
       name: "C",
       yoe: "learning",
@@ -56,7 +60,11 @@
       yoe: "Not using anymore",
       href: "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)",
     },
-    { name: "GDScript", yoe: "learning", href: "https://gdscript.com" },
+    {
+      name: "GDScript",
+      yoe: "1 years + learning",
+      href: "https://gdscript.com",
+    },
     { name: "JavaScript", yoe: "learning", href: "https://www.javascript.com" },
     {
       name: "TypeScript",
@@ -70,12 +78,24 @@
   ];
   const backendframeworks = [{ name: "go-fiber", yoe: "learning", href: "" }];
   const libraries = [
-    { name: "TailwindCSS", yoe: "learning", href: "https://tailwindcss.com" },
+    {
+      name: "TailwindCSS",
+      yoe: "1 years + learning",
+      href: "https://tailwindcss.com",
+    },
     { name: "htmx", yoe: "learning", href: "https://htmx.org" },
-    { name: "templ", yoe: "learning", href: "https://github.com/a-h/templ" },
+    {
+      name: "templ",
+      yoe: "1 years + learning",
+      href: "https://github.com/a-h/templ",
+    },
   ];
   const databases = [
-    { name: "Postgres", yoe: "learning", href: "https://www.postgresql.org" },
+    {
+      name: "Postgres",
+      yoe: "1 years + learning",
+      href: "https://www.postgresql.org",
+    },
     {
       name: "SQLite",
       yoe: "Not using anymore",
