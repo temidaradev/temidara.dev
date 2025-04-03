@@ -4,6 +4,16 @@
 
   let steps = [
     {
+      name: "NeuraTalk",
+      icon: "fa-brands fa-github",
+      href: "/neuratalk",
+    },
+    {
+      name: "The Unspooled Self",
+      icon: "fa-brands fa-github",
+      href: "/game",
+    },
+    {
       name: "LidTek",
       icon: "fa-brands fa-github",
       href: "https://lidtek.gamu.group",
@@ -221,17 +231,31 @@
     <div class="grid grid-cols-3 gap-12 lg:gap-8 md:gap-4 sm:gap-2">
       <Step step={steps[0]}>
         <p>
-          Organization of Our <strong class="text-violet-400">Duo</strong> Team
+          A GUI App For Your Local <strong class="text-violet-400"
+            >Ollama</strong
+          > LLMs
         </p>
       </Step>
       <Step step={steps[1]}>
+        <p>
+          My First 3D Psychological Horror <strong class="text-violet-400"
+            >Game</strong
+          >
+        </p>
+      </Step>
+      <Step step={steps[2]}>
+        <p>
+          Organization of Our <strong class="text-violet-400">Duo</strong> Team
+        </p>
+      </Step>
+      <Step step={steps[3]}>
         <p>
           Making a fun multiplayer drawing game using <strong
             class="text-violet-400">Golang, Svelte, and WebRTC!</strong
           >
         </p>
       </Step>
-      <Step step={steps[2]}>
+      <Step step={steps[4]}>
         <p>
           You can check my past experiences by clicking <strong
             class="text-violet-400">Here</strong
