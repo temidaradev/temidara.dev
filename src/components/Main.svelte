@@ -42,69 +42,41 @@
         "I have curiosity on other things, not only coding... I also like playing electric guitar and mathematics at all and I love searching about human psychology and I love playing games!",
     },
   ];
-
-  const tools = [
-    { name: "Git", yoe: "3 years", href: "https://git-scm.com" },
-    { name: "Vite", yoe: "learning", href: "https://vitejs.dev" },
-    {
-      name: "Docker",
-      yoe: "1 years + learning",
-      href: "https://www.docker.com",
-    },
-    { name: "Vercel", yoe: "learning", href: "https://vercel.com" },
-  ];
   const languages = [
-    { name: "Golang", yoe: "2 years", href: "https://go.dev" },
+    { name: "Golang", yoe: "3 years", href: "https://go.dev" },
     {
       name: "C",
-      yoe: "learning",
+      yoe: "1 year",
       href: "https://en.wikipedia.org/wiki/C_(programming_language)",
     },
     {
       name: "C++",
-      yoe: "learning",
+      yoe: "1 year",
       href: "https://en.wikipedia.org/wiki/C%2B%2B",
     },
     {
       name: "GDScript",
-      yoe: "1 years + learning",
+      yoe: "1 year",
       href: "https://gdscript.com",
     },
-    { name: "JavaScript", yoe: "learning", href: "https://www.javascript.com" },
     {
-      name: "TypeScript",
+      name: "Rust",
       yoe: "learning",
-      href: "https://www.typescriptlang.org",
+      href: "https://www.rust-lang.org",
     },
   ];
-  const frontendframeworks = [
-    { name: "React", yoe: "learning", href: "https://react.dev" },
-    { name: "SvelteKit", yoe: "learning", href: "https://kit.svelte.dev" },
-  ];
-  const backendframeworks = [{ name: "go-fiber", yoe: "learning", href: "" }];
-  const libraries = [
+  const real_langs = [
     {
-      name: "TailwindCSS",
-      yoe: "1 years + learning",
-      href: "https://tailwindcss.com",
-    },
-    { name: "htmx", yoe: "learning", href: "https://htmx.org" },
-    {
-      name: "templ",
-      yoe: "1 years + learning",
-      href: "https://github.com/a-h/templ",
-    },
-  ];
-  const databases = [
-    {
-      name: "Postgres",
-      yoe: "1 years + learning",
-      href: "https://www.postgresql.org",
+      name: "Turkish",
+      status: "native",
     },
     {
-      name: "SQLite",
-      yoe: "Not using anymore",
-      href: "https://www.sqlite.org",
+      name: "English",
+      status: "C1",
+    },
+    {
+      name: "Japanese",
+      status: "A1",
     },
   ];
 </script>
@@ -115,30 +87,11 @@
       class="flex flex-col lg:justify-center text-center lg:text-left gap-6 md:gap-8 lg:gap-10"
     >
       <h2 class="font-semibold text-center text-4xl sm:text-5xl md:text-6xl">
-        Hi! I'm <span class="poppins text-violet-400">Temidara</span> <br />
-        Wants To Be A
-        <span class="poppins text-violet-400">Fullstack Developer</span>
+        Hi! I'm <span class="poppins text-violet-400">Temidaradev</span>
         <div class="flex flex-col"></div>
       </h2>
-      <p class="text-base text-center sm:text-lg md:text-cl">
-        <span class="text-violet-400">Techs</span> That I Use And Learn
-      </p>
       <div class="flex flex-col sm:-32">
-        <h6 class="text-2xl">Tools</h6>
-        <div class="flex flex-wrap flex-row gap-1">
-          {#each tools as { name, yoe, href }}
-            <a
-              {href}
-              target="_blank"
-              class="px-1 rounded-md border border-solid border-slate-500 hover:border-slate-800 duration-200 flex cursor-pointer"
-            >
-              <p class="poppins text-lg text-slate-300">
-                {name} <span class="text-sm text-slate-500">{yoe}</span>
-              </p>
-            </a>
-          {/each}
-        </div>
-        <h6 class="text-2xl">Languages</h6>
+        <h6 class="text-2xl">Languages That I Use</h6>
         <div class="flex flex-wrap flex-row gap-1">
           {#each languages as { name, yoe, href }}
             <a
@@ -152,60 +105,16 @@
             </a>
           {/each}
         </div>
-        <h6 class="text-2xl">Frontend Frameworks</h6>
+        <h6 class="text-2xl">Real Language That I Know</h6>
         <div class="flex flex-wrap flex-row gap-1">
-          {#each frontendframeworks as { name, yoe, href }}
-            <a
-              {href}
-              target="_blank"
+          {#each real_langs as { name, status }}
+            <div
               class="px-1 rounded-md border border-solid border-slate-500 hover:border-slate-800 duration-200 flex cursor-pointer"
             >
               <p class="poppins text-lg text-slate-300">
-                {name} <span class="text-sm text-slate-500">{yoe}</span>
+                {name} <span class="text-sm text-slate-500">{status}</span>
               </p>
-            </a>
-          {/each}
-        </div>
-        <h6 class="text-2xl">Backend Frameworks</h6>
-        <div class="flex flex-wrap flex-row gap-1">
-          {#each backendframeworks as { name, yoe, href }}
-            <a
-              {href}
-              target="_blank"
-              class="px-1 rounded-md border border-solid border-slate-500 hover:border-slate-800 duration-200 flex cursor-pointer"
-            >
-              <p class="poppins text-lg text-slate-300">
-                {name} <span class="text-sm text-slate-500">{yoe}</span>
-              </p>
-            </a>
-          {/each}
-        </div>
-        <h6 class="text-2xl">Libraries</h6>
-        <div class="flex flex-wrap flex-row gap-1">
-          {#each libraries as { name, yoe, href }}
-            <a
-              {href}
-              target="_blank"
-              class="px-1 rounded-md border border-solid border-slate-500 hover:border-slate-800 duration-200 flex cursor-pointer"
-            >
-              <p class="poppins text-lg text-slate-300">
-                {name} <span class="text-sm text-slate-500">{yoe}</span>
-              </p>
-            </a>
-          {/each}
-        </div>
-        <h6 class="text-2xl">Databases</h6>
-        <div class="flex flex-wrap flex-row gap-1">
-          {#each databases as { name, yoe, href }}
-            <a
-              {href}
-              target="_blank"
-              class="px-1 rounded-md border border-solid border-slate-500 hover:border-slate-800 duration-200 flex cursor-pointer"
-            >
-              <p class="poppins text-lg text-slate-300">
-                {name} <span class="text-sm text-slate-500">{yoe}</span>
-              </p>
-            </a>
+            </div>
           {/each}
         </div>
       </div>
