@@ -3,7 +3,7 @@
   import "../styles/markdown.css"; // Stil dosyasını ekliyoruz
 
   const url =
-    "https://raw.githubusercontent.com/temidaradev/NeuraTalk/refs/heads/main/README.md";
+    "https://raw.githubusercontent.com/temidaradev/NeuraTalk/refs/heads/master/README.md";
 </script>
 
 <div class="markdown-content">
