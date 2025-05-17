@@ -31,7 +31,7 @@
   </div>
   <Header {y} />
   <slot></slot>
-  <Footer>s</Footer>
+  <Footer />
 </div>
 
 <svelte:window bind:scrollY={y} bind:innerHeight bind:innerWidth />
