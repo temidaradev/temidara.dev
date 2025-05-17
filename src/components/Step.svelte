@@ -11,9 +11,6 @@
   <div
     class="absolute inset-0 bg-gradient-to-br from-pink-400/10 to-purple-400/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
   ></div>
-  <div
-    class="absolute inset-0 bg-[url('/static/assets/anime/coding.svg')] bg-cover bg-center opacity-0 group-hover:opacity-10 transition-opacity duration-500 mix-blend-lighten animate-pulse"
-  ></div>
 
   <!-- Decorative corner effects -->
   <div
