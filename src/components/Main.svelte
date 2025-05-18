@@ -140,7 +140,7 @@
 
       <div class="relative">
         <h6
-          class="text-lg sm:text-xl md:text-2xl pixelated text-purple-300 animate-pulse"
+          class="text-lg sm:text-xl md:text-2xl py-5 pixelated text-purple-300 animate-pulse"
         >
           クリエイティブな冒険
         </h6>
