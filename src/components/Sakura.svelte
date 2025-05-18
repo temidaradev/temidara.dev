@@ -1,5 +1,6 @@
 <script>
-  let petals = Array(25).fill(null);
+  // Increased the number of petals for a more visible effect
+  let petals = Array(40).fill(null);
 </script>
 
 <div class="fixed w-full h-full pointer-events-none z-0">
@@ -13,8 +14,8 @@
       "
     >
       <div
-        class="w-4 h-4 bg-gradient-to-br from-pink-200/70 to-pink-300/60 rotate-45 rounded-tl-3xl rounded-br-3xl animate-neon-glow"
-        style="box-shadow: 0 0 8px rgba(236, 72, 153, 0.5);"
+        class="w-5 h-5 bg-gradient-to-br from-pink-200/80 to-pink-300/70 rotate-45 rounded-tl-3xl rounded-br-3xl animate-neon-glow"
+        style="box-shadow: 0 0 10px rgba(236, 72, 153, 0.6);"
       ></div>
     </div>
   {/each}
@@ -23,17 +24,23 @@
 <style>
   @keyframes float {
     0% {
-      transform: translateY(-10%) rotate(0deg);
+      transform: translateY(-10%) translateX(0) rotate(0deg);
+    }
+    25% {
+      transform: translateY(25vh) translateX(30px) rotate(90deg);
     }
     50% {
-      transform: translateY(50vh) rotate(180deg);
+      transform: translateY(50vh) translateX(-30px) rotate(180deg);
+    }
+    75% {
+      transform: translateY(75vh) translateX(30px) rotate(270deg);
     }
     100% {
-      transform: translateY(100vh) rotate(360deg);
+      transform: translateY(100vh) translateX(0) rotate(360deg);
     }
   }
 
   .animate-float {
-    animation: float linear infinite;
+    animation: float ease-in-out infinite;
   }
 </style>

@@ -2,7 +2,6 @@
   import "../app.css";
   import Footer from "../components/Footer.svelte";
   import Header from "../components/Header.svelte";
-  import AnimeBg from "../components/AnimeBg.svelte";
   import Sakura from "../components/Sakura.svelte";
 
   let y;
@@ -14,8 +13,7 @@
   }
 </script>
 
-<!-- Apply AnimeBg and Sakura components at the layout level -->
-<AnimeBg />
+<!-- Apply only Sakura component at the layout level -->
 <Sakura />
 
 <div
