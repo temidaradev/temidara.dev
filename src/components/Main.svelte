@@ -32,14 +32,14 @@
 
   let benefits = [
     {
-      name: "a self taught developer",
+      name: "a self-taught practitioner of arcane arts",
       description:
-        "I taught myself to code using free online resources and by tackling real-world development challenges. My journey began with C#, which I first learned in 5th grade. I later paused to prepare for my high school entrance exams, but once I started high school, I resumed programming—this time with Go (Golang). I'm currently focused on mastering Go and aspire to become a professional Go developer. I'm also interested in Rust, particularly because of its strong presence in blockchain development, and I plan to deepen my skills in that area as well.",
+        "Through ancient tomes and trials of the realm, I didst train mine own self in the mystic arts of code. Mine quest began with the runes of C#, which I first mastered in mine fifth year of scholarly pursuit. A time of respite followed as I prepared for the Great Trials of Academic Entrance, but upon ascending to the halls of higher learning, I resumed mine craft—this time with the ancient magic of Go (Golang). In these present days, I doth focus upon mastering Go, aspiring to become a venerable sage of its ways. The enigmatic powers of Rust also beckon me, for its dominion extends into the blockchain realm, and I shall endeavor to harness its might.",
     },
     {
-      name: "a curious person",
+      name: "a seeker of forgotten knowledge",
       description:
-        "Beyond coding, I'm deeply curious about subjects like mathematics and human psychology. In my free time, I also enjoy playing games, which often inspire me. I believe that games are a powerful medium for storytelling and creativity, and I'm excited to explore this further in my own projects.",
+        "Beyond the arcane scripts, mine curiosity stretches to the celestial mathematics and the mysteries of mortal minds. In times of repose, I partake in the revelries of interactive tales, which oft inspire mine own thinking. Verily, I believe these games to be vessels of profound narrative power and creative fire, and I am most eager to weave such enchantments into mine own creations.",
     },
   ];
   const languages = [
@@ -94,12 +94,14 @@
       <h2
         class="font-semibold text-center text-4xl sm:text-5xl md:text-6xl animate-pulse"
       >
-        こんにちは! I'm{" "}
+        こんにちは! Hark, 'tis I,{" "}
         <span class="poppins text-pink-400 anime-text-glow">Temidaradev</span>
         <div class="flex flex-col"></div>
       </h2>
       <div class="flex flex-col sm:-32">
-        <h6 class="text-2xl pixelated text-purple-300">Languages That I Use</h6>
+        <h6 class="text-2xl font-medium text-purple-300">
+          Tongues in Which I Am Versed
+        </h6>
         <div class="flex flex-wrap flex-row gap-2">
           {#each languages as { name, yoe, href }}
             <a
@@ -114,8 +116,8 @@
             </a>
           {/each}
         </div>
-        <h6 class="text-2xl pixelated text-purple-300 mt-4">
-          Real Language That I Know
+        <h6 class="text-2xl font-medium text-purple-300 mt-4">
+          Mortal Tongues in Which I Am Proficient
         </h6>
         <div class="flex flex-wrap flex-row gap-2">
           {#each real_langs as { name, status }}
@@ -140,21 +142,21 @@
 
       <div class="relative">
         <h6
-          class="text-lg sm:text-xl md:text-2xl py-5 pixelated text-purple-300 animate-pulse"
+          class="text-lg sm:text-xl md:text-2xl py-5 font-medium text-purple-300 animate-pulse"
         >
           クリエイティブな冒険
         </h6>
         <p class="text-sm text-purple-200/70 mt-1">
-          (A few of my creative endeavors)
+          (Mine Noble Quests of Arcane Creation and Enlightenment)
         </p>
       </div>
 
       <h3 class="font-semibold text-3xl sm:text-4xl md:text-5xl relative">
-        Curious To{" "}
+        Dost Thou{" "}
         <span class="poppins text-pink-400 anime-text-glow animate-pulse"
-          >See</span
+          >Yearn</span
         >
-        My Work?
+        To Gaze Upon Mine Sacred Works?
         <div
           class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-40 h-2 bg-gradient-to-r from-transparent via-purple-400 to-transparent opacity-70"
           style="box-shadow: 0 0 10px rgba(167, 139, 250, 0.5);"
@@ -173,7 +175,7 @@
       <p
         class="text-pink-200 group-hover:text-purple-200 transition-colors duration-300"
       >
-        チェック GitHub
+        Behold Mine Ancient Scrolls of Knowledge
       </p>
     </a>
     <div
@@ -184,32 +186,37 @@
       ></div>
       <Step step={steps[0]}>
         <p>
-          A GUI App For Your Local{" "}
-          <strong class="text-violet-400">Ollama</strong> LLMs
+          A Mystical Portal for Thine Local{" "}
+          <strong class="text-violet-400">Ollama</strong> Enchantments, Wrought by
+          Mine Own Hand
         </p>
       </Step>
       <Step step={steps[1]}>
         <p>
-          My First 3D Psychological Horror{" "}
-          <strong class="text-violet-400">Game</strong>
+          Mine First Dimensional Nightmare, Forged in the{" "}
+          <strong class="text-violet-400">Crucible of Mind and Spirit</strong>
         </p>
       </Step>
       <Step step={steps[2]}>
         <p>
-          Organization of Our{" "}
-          <strong class="text-violet-400">Duo</strong> Team
+          Fellowship of Our Most Noble{" "}
+          <strong class="text-violet-400">Twain</strong> Order, United in Sacred
+          Purpose
         </p>
       </Step>
       <Step step={steps[3]}>
         <p>
-          Making a fun multiplayer drawing game using{" "}
-          <strong class="text-violet-400">Golang, Svelte, and WebRTC!</strong>
+          Forging a Grand Realm for the Fellowship of Artisans through{" "}
+          <strong class="text-violet-400"
+            >Golang Enchantments, Svelte Incantations, and WebRTC Arcane
+            Bindings!</strong
+          >
         </p>
       </Step>
       <Step step={steps[4]}>
         <p>
-          You can check my past experiences by clicking{" "}
-          <strong class="text-violet-400">Here</strong>!!!
+          Thou mayest traverse mine chronicles of olden campaigns by beckoning{" "}
+          <strong class="text-violet-400">Hither</strong>, O Curious Traveler!!!
         </p>
       </Step>
     </div>
@@ -225,12 +232,14 @@
         style="box-shadow: 0 0 8px rgba(236, 72, 153, 0.4);"
       ></div>
 
-      <h6 class="text-lg sm:text-xl md:text-2xl pixelated text-purple-300">
-        Want To Know More?
+      <h6 class="text-lg sm:text-xl md:text-2xl font-medium text-purple-300">
+        Wish to Know More of Me?
       </h6>
       <h3 class="font-semibold text-3xl sm:text-4xl md:text-5xl">
-        A Bit <span class="poppins text-purple-400 anime-text-glow">About</span>
-        Me
+        A Brief <span class="poppins text-purple-400 anime-text-glow"
+          >Chronicle</span
+        >
+        of Mine Origins
       </h3>
 
       <!-- Bottom decorative line -->
@@ -240,9 +249,9 @@
     </div>
 
     <p
-      class="mx-auto poppins font-semibold text-lg sm:text-xl md:text-2xl pixelated text-pink-400 anime-text-glow"
+      class="mx-auto poppins font-semibold text-lg sm:text-xl md:text-2xl font-medium text-pink-400 anime-text-glow"
     >
-      I am . . .
+      Verily, I am . . .
     </p>
 
     <div class="flex flex-col gap-20 w-full mx-auto max-w-[800px]">

@@ -4,12 +4,12 @@
   import Header from "../components/Header.svelte";
   import Sakura from "../components/Sakura.svelte";
 
-  let y;
+  let y = 0;
   let innerHeight = 0;
   let innerWidth = 0;
 
   function goTop() {
-    document.body.scrollIntoView();
+    document.body.scrollIntoView({ behavior: "smooth" });
   }
 </script>
 

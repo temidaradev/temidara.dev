@@ -35,8 +35,8 @@
         class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-pink-500/20 rounded-full blur-3xl"
       ></div>
       <h1 class="text-4xl md:text-5xl relative">
-        <span class="text-pink-400 anime-text-glow pixelated">My</span>
-        <span class="text-purple-300 pixelated relative inline-block">
+        <span class="text-pink-400 anime-text-glow font-medium">My</span>
+        <span class="text-purple-300 font-medium relative inline-block">
           Blog
           <span
             class="absolute -top-1 -right-1 w-2 h-2 bg-pink-400 rounded-full animate-ping"
@@ -88,7 +88,7 @@
 
             <!-- Title with glow effect -->
             <h2
-              class="text-2xl mb-3 text-pink-400 group-hover:text-pink-300 transition-colors duration-300 font-bold pixelated"
+              class="text-2xl mb-3 text-pink-400 group-hover:text-pink-300 transition-colors duration-300 font-bold font-medium"
             >
               {tab.name}
             </h2>
@@ -104,7 +104,7 @@
             <div
               class="mt-4 text-sm text-pink-400/70 group-hover:text-pink-300 transition-colors duration-300 flex items-center gap-2"
             >
-              <span class="pixelated">Read More</span>
+              <span class="font-medium">Read More</span>
               <i class="fa-solid fa-arrow-right text-xs"></i>
             </div>
           </div>

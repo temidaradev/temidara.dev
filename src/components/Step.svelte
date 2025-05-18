@@ -53,7 +53,7 @@
       class="ml-auto cursor-pointer group-hover:text-pink-400 duration-300 relative overflow-hidden"
     >
       <p
-        class="anime-text-glow pixelated animate-pulse flex items-center gap-2 group-hover:transform group-hover:translate-x-1 transition-transform"
+        class="anime-text-glow font-medium animate-pulse flex items-center gap-2 group-hover:transform group-hover:translate-x-1 transition-transform"
       >
         探索する
         <span

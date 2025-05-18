@@ -18,7 +18,7 @@
       class="absolute inset-0 bg-gradient-to-r from-pink-400/10 to-purple-400/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
     ></div>
     <p
-      class="relative text-lg pixelated text-purple-300 group-hover:animate-glitch"
+      class="relative text-lg font-medium text-purple-300 group-hover:animate-glitch"
     >
       Contact Me !
     </p>
@@ -51,7 +51,7 @@
 
     <div class="flex flex-col gap-3 items-center text-center">
       <p class="group relative">
-        <span class="text-sm text-purple-300 pixelated">Email:</span>
+        <span class="text-sm text-purple-300 font-medium">Email:</span>
         <a
           href="mailto:ahmet.affan.ebcioglu@outlook.com"
           class="ml-2 text-pink-400 hover:text-pink-300 transition-colors duration-300"
@@ -60,7 +60,7 @@
         </a>
       </p>
       <p class="group relative">
-        <span class="text-sm text-purple-300 pixelated">GitHub:</span>
+        <span class="text-sm text-purple-300 font-medium">GitHub:</span>
         <a
           href="https://github.com/temidaradev"
           target="_blank"
