@@ -9,7 +9,10 @@
   // Function to handle form submission
   async function handleSubmit() {
     if (!name || !email || !message) {
-      submitStatus = { success: false, message: "Prithee, fill out all fields as required by royal decree." };
+      submitStatus = {
+        success: false,
+        message: "Prithee, fill out all fields as required by royal decree.",
+      };
       return;
     }
 
@@ -21,7 +24,8 @@
       isSubmitting = false;
       submitStatus = {
         success: true,
-        message: "Thy message hath been received with gratitude! I shall respond with haste in due time.",
+        message:
+          "Thy message hath been received with gratitude! I shall respond with haste in due time.",
       };
       formVisible = false;
 
@@ -66,9 +70,10 @@
       class="w-48 h-1 mx-auto mt-2 bg-gradient-to-r from-transparent via-pink-400 to-transparent"
       style="box-shadow: 0 0 10px rgba(236, 72, 153, 0.5);"
     ></div>
-    <p class="text-violet-200 mt-4 mb-2">Forge a Connection with Mine Self!</p>
+    <p class="text-violet-200 mt-4 mb-2">Forge a Connection with My Self!</p>
     <p class="text-sm text-violet-300/70">
-      Prithee, send forth a missive for potential alliances or merely to extend thine greetings
+      Prithee, send forth a missive for potential alliances or merely to extend
+      thine greetings
     </p>
   </div>
 

@@ -51,7 +51,9 @@
     <div
       class="w-48 h-1 mx-auto mt-4 bg-gradient-to-r from-transparent via-violet-400 to-transparent"
     ></div>
-    <p class="text-sm text-violet-200/70 mt-2">(Mine Chronicles of Valor and Conquest)</p>
+    <p class="text-sm text-violet-200/70 mt-2">
+      (My Chronicles of Valor and Conquest)
+    </p>
   </div>
 
   <main class="flex flex-col flex-1 p-4">
@@ -77,16 +79,17 @@
             class="absolute -top-1 -right-1 w-2 h-2 bg-pink-400 rounded-full opacity-70 group-hover:animate-ping"
           ></span>
         </span>
-        Creator of Ethereal Realms
+        Artisan of the Ethereal Realms
       </h2>
       <h3 class="font-semibold text-m sm:text-l md:text-xl mt-3">
-        I doth presently serve the noble guild <a
+        I presently serve the noble guild <a
           href="https://github.com/jinchuugames"
           class="text-pink-400 hover:text-pink-300 relative transition-colors duration-300"
           >jinchuugames<span
             class="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-pink-400 to-transparent opacity-0 group-hover:opacity-100 transition-all"
           ></span></a
-        > as crafter of ethereal realms. Mine hands weave the sorcery of GDScript to conjure a grand interactive tapestry.
+        > as a humble artisan. Under their guidance, I employ the sorcery of GDScript
+        to assist in crafting their grand interactive tapestry.
       </h3>
       <h3 class="text-s sm:text-m md:text-l mt-2 text-violet-200/80">
         September 2024 - Present
@@ -107,7 +110,9 @@
 
       <!-- Skills list with anime style -->
       <div class="mt-4">
-        <h4 class="text-pink-400 text-lg mb-2 font-medium">スキル / Mystical Arts</h4>
+        <h4 class="text-pink-400 text-lg mb-2 font-medium">
+          スキル / Mystical Arts
+        </h4>
         <div class="flex flex-wrap gap-2">
           <span
             class="px-2 py-1 rounded-md bg-violet-900/30 border border-violet-400/30 text-violet-200 text-sm"
@@ -150,9 +155,11 @@
         Keeper of the Open Scrolls
       </h2>
       <h3 class="font-semibold text-m sm:text-l md:text-xl mt-3">
-        I doth bestow mine craft upon the scrolls of open knowledge, forging arcane instruments 
-        for the benefit of the realm's denizens. I have unleashed mystic artifacts known as NeuraTalk and Drawniverse, 
-        endowing others with enchanted implements of artificial wisdom and vessels for creative expression.
+        I bestow my craft upon the scrolls of open knowledge, forging arcane
+        instruments for the benefit of the realm's denizens. I have unleashed
+        mystic artifacts known as NeuraTalk and Drawniverse, endowing others
+        with enchanted implements of artificial wisdom and vessels for creative
+        expression.
       </h3>
       <h3 class="text-s sm:text-m md:text-l mt-2 text-violet-200/80">
         May 2023 - Present
@@ -173,7 +180,9 @@
 
       <!-- Skills list with anime style -->
       <div class="mt-4">
-        <h4 class="text-pink-400 text-lg mb-2 font-medium">スキル / Mystical Arts</h4>
+        <h4 class="text-pink-400 text-lg mb-2 font-medium">
+          スキル / Mystical Arts
+        </h4>
         <div class="flex flex-wrap gap-2">
           <span
             class="px-2 py-1 rounded-md bg-violet-900/30 border border-violet-400/30 text-violet-200 text-sm"
@@ -220,11 +229,12 @@
         Pilgrimage of Arcane Knowledge
       </h2>
       <h3 class="font-semibold text-m sm:text-l md:text-xl mt-3">
-        Mine journey in the arcane arts commenced in the fifth cycle of scholarly tutelage, 
-        when I first gazed upon the mystic runes of C#. Following a period of repose to prepare for 
-        the Great Trials of Academic Entrance, I resumed mine pursuit of enlightenment with the enigmatic 
-        sigils of Go (Golang). I persistently cultivate mine abilities through solitary study of ancient tomes 
-        and the forging of practical enchanted artifacts.
+        My journey in the arcane arts commenced in the fifth cycle of scholarly
+        tutelage, when I first gazed upon the mystic runes of C#. Following a
+        period of repose to prepare for the Great Trials of Academic Entrance, I
+        resumed my pursuit of enlightenment with the enigmatic sigils of Go
+        (Golang). I persistently cultivate my abilities through solitary study
+        of ancient tomes and the forging of practical enchanted artifacts.
       </h3>
       <h3 class="text-s sm:text-m md:text-l mt-2 text-violet-200/80">
         2018 - Present
@@ -245,7 +255,9 @@
 
       <!-- Skills list with anime style -->
       <div class="mt-4">
-        <h4 class="text-pink-400 text-lg mb-2 font-medium">スキル / Mystical Arts</h4>
+        <h4 class="text-pink-400 text-lg mb-2 font-medium">
+          スキル / Mystical Arts
+        </h4>
         <div class="flex flex-wrap gap-2">
           <span
             class="px-2 py-1 rounded-md bg-violet-900/30 border border-violet-400/30 text-violet-200 text-sm"

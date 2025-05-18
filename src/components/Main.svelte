@@ -34,12 +34,12 @@
     {
       name: "a self-taught practitioner of arcane arts",
       description:
-        "Through ancient tomes and trials of the realm, I didst train mine own self in the mystic arts of code. Mine quest began with the runes of C#, which I first mastered in mine fifth year of scholarly pursuit. A time of respite followed as I prepared for the Great Trials of Academic Entrance, but upon ascending to the halls of higher learning, I resumed mine craft—this time with the ancient magic of Go (Golang). In these present days, I doth focus upon mastering Go, aspiring to become a venerable sage of its ways. The enigmatic powers of Rust also beckon me, for its dominion extends into the blockchain realm, and I shall endeavor to harness its might.",
+        "Through ancient tomes and trials of the realm, I trained myself in the mystic arts of code. My quest began with the runes of C#, which I first mastered in my fifth year of scholarly pursuit. A time of respite followed as I prepared for the Great Trials of Academic Entrance, but upon ascending to the halls of higher learning, I resumed my craft—this time with the ancient magic of Go (Golang). In these present days, I focus upon mastering Go, aspiring to become a venerable sage of its ways. The enigmatic powers of Rust also beckon me, for its dominion extends into the blockchain realm, and I shall endeavor to harness its might.",
     },
     {
       name: "a seeker of forgotten knowledge",
       description:
-        "Beyond the arcane scripts, mine curiosity stretches to the celestial mathematics and the mysteries of mortal minds. In times of repose, I partake in the revelries of interactive tales, which oft inspire mine own thinking. Verily, I believe these games to be vessels of profound narrative power and creative fire, and I am most eager to weave such enchantments into mine own creations.",
+        "Beyond the arcane scripts, my curiosity stretches to the celestial mathematics and the mysteries of mortal minds. In times of repose, I partake in the revelries of interactive tales, which oft inspire my own thinking. Verily, I believe these games to be vessels of profound narrative power and creative fire, and I am most eager to weave such enchantments into my own creations.",
     },
   ];
   const languages = [
@@ -147,7 +147,7 @@
           クリエイティブな冒険
         </h6>
         <p class="text-sm text-purple-200/70 mt-1">
-          (Mine Noble Quests of Arcane Creation and Enlightenment)
+          (My Noble Quests of Arcane Creation and Enlightenment)
         </p>
       </div>
 
@@ -156,7 +156,7 @@
         <span class="poppins text-pink-400 anime-text-glow animate-pulse"
           >Yearn</span
         >
-        To Gaze Upon Mine Sacred Works?
+        To Gaze Upon My Sacred Works?
         <div
           class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-40 h-2 bg-gradient-to-r from-transparent via-purple-400 to-transparent opacity-70"
           style="box-shadow: 0 0 10px rgba(167, 139, 250, 0.5);"
@@ -175,7 +175,7 @@
       <p
         class="text-pink-200 group-hover:text-purple-200 transition-colors duration-300"
       >
-        Behold Mine Ancient Scrolls of Knowledge
+        Behold My Ancient Scrolls of Knowledge
       </p>
     </a>
     <div
@@ -188,12 +188,12 @@
         <p>
           A Mystical Portal for Thine Local{" "}
           <strong class="text-violet-400">Ollama</strong> Enchantments, Wrought by
-          Mine Own Hand
+          My Own Hand
         </p>
       </Step>
       <Step step={steps[1]}>
         <p>
-          Mine First Dimensional Nightmare, Forged in the{" "}
+          My First Dimensional Nightmare, Forged in the{" "}
           <strong class="text-violet-400">Crucible of Mind and Spirit</strong>
         </p>
       </Step>
@@ -215,7 +215,7 @@
       </Step>
       <Step step={steps[4]}>
         <p>
-          Thou mayest traverse mine chronicles of olden campaigns by beckoning{" "}
+          Thou mayest traverse my chronicles of olden campaigns by beckoning{" "}
           <strong class="text-violet-400">Hither</strong>, O Curious Traveler!!!
         </p>
       </Step>
@@ -239,7 +239,7 @@
         A Brief <span class="poppins text-purple-400 anime-text-glow"
           >Chronicle</span
         >
-        of Mine Origins
+        of My Origins
       </h3>
 
       <!-- Bottom decorative line -->
