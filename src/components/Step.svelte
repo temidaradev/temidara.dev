@@ -5,7 +5,7 @@
 <a
   href={step.href}
   target="_blank"
-  class="p-4 sm:p-6 md:p-8 flex flex-col gap-4 rounded-lg border-2 border-pink-400/50 text-center cursor-pointer group hover:border-purple-400 duration-500 hover:shadow-lg hover:shadow-pink-400/20 bg-slate-900/50 backdrop-blur-sm relative overflow-visible hover:transform hover:scale-[1.02] transition-all"
+  class="p-4 sm:p-6 md:p-8 flex flex-col gap-4 rounded-lg border-2 border-pink-400/50 text-center cursor-pointer group hover:border-purple-400 duration-500 hover:shadow-lg hover:shadow-pink-400/20 bg-slate-900/50 relative overflow-visible hover:transform hover:scale-[1.02] transition-all"
 >
   <!-- Background gradients and effects -->
   <div
@@ -14,10 +14,12 @@
 
   <!-- Decorative corner effects -->
   <div
-    class="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-pink-400/30 -translate-x-1 -translate-y-1 group-hover:border-purple-400/50 transition-colors duration-500"
+    class="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-pink-400/60 -translate-x-1 -translate-y-1 group-hover:border-purple-400/80 transition-colors duration-500"
+    style="box-shadow: -2px -2px 5px rgba(236, 72, 153, 0.3);"
   ></div>
   <div
-    class="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-pink-400/30 translate-x-1 translate-y-1 group-hover:border-purple-400/50 transition-colors duration-500"
+    class="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-pink-400/60 translate-x-1 translate-y-1 group-hover:border-purple-400/80 transition-colors duration-500"
+    style="box-shadow: 2px 2px 5px rgba(236, 72, 153, 0.3);"
   ></div>
 
   <!-- Logo container with enhanced effects -->

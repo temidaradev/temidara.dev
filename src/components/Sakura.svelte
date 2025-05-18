@@ -1,5 +1,5 @@
 <script>
-  let petals = Array(15).fill(null);
+  let petals = Array(25).fill(null);
 </script>
 
 <div class="fixed w-full h-full pointer-events-none z-0">
@@ -13,7 +13,8 @@
       "
     >
       <div
-        class="w-4 h-4 bg-gradient-to-br from-pink-200/40 to-pink-300/30 rotate-45 rounded-tl-3xl rounded-br-3xl backdrop-blur-sm animate-neon-glow"
+        class="w-4 h-4 bg-gradient-to-br from-pink-200/70 to-pink-300/60 rotate-45 rounded-tl-3xl rounded-br-3xl animate-neon-glow"
+        style="box-shadow: 0 0 8px rgba(236, 72, 153, 0.5);"
       ></div>
     </div>
   {/each}

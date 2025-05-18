@@ -1,8 +1,6 @@
 <script>
   import Step from "./Step.svelte";
   import Techs from "./Techs.svelte";
-  import Sakura from "./Sakura.svelte";
-  import AnimeBg from "./AnimeBg.svelte";
 
   let steps = [
     {
@@ -88,10 +86,7 @@
   ];
 </script>
 
-<AnimeBg />
-<Sakura />
-
-<main class="flex flex-col flex-1 p-4 relative backdrop-blur-sm">
+<main class="flex flex-col flex-1 p-4 relative">
   <section id="introPage" class="grid grid-cols-1 py-8 sm:py-14">
     <div
       class="flex flex-col lg:justify-center text-center lg:text-left gap-6 md:gap-8 lg:gap-10"
@@ -140,7 +135,7 @@
   <section id="projects" class="flex flex-col gap-24">
     <div class="flex flex-col gap-4 text-center relative">
       <div
-        class="absolute top-0 left-1/2 transform -translate-x-1/2 w-2/3 h-0.5 bg-gradient-to-r from-transparent via-pink-400 to-transparent opacity-30"
+        class="absolute top-0 left-1/2 transform -translate-x-1/2 w-2/3 h-1 bg-gradient-to-r from-transparent via-pink-400 to-transparent opacity-60"
       ></div>
 
       <div class="relative">
@@ -161,7 +156,8 @@
         >
         My Work?
         <div
-          class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-transparent via-purple-400 to-transparent opacity-50"
+          class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-40 h-2 bg-gradient-to-r from-transparent via-purple-400 to-transparent opacity-70"
+          style="box-shadow: 0 0 10px rgba(167, 139, 250, 0.5);"
         ></div>
       </h3>
     </div>
@@ -169,7 +165,7 @@
     <a
       href="https://github.com/temidaradev"
       target="_blank"
-      class="mx-auto px-6 py-3 rounded-full border-2 border-pink-400/50 flex items-center gap-3 -mb-4 sm:-mb-0 -mt-10 hover:border-purple-400 hover:shadow-lg hover:shadow-pink-400/20 duration-300 bg-slate-900/50 backdrop-blur-sm group transform hover:scale-105 transition-all"
+      class="mx-auto px-6 py-3 rounded-full border-2 border-pink-400/50 flex items-center gap-3 -mb-4 sm:-mb-0 -mt-10 hover:border-purple-400 hover:shadow-lg hover:shadow-pink-400/20 duration-300 bg-slate-900/50 group transform hover:scale-105 transition-all"
     >
       <i
         class="fa-brands fa-github text-pink-400 text-xl group-hover:rotate-12 transition-transform duration-300"
@@ -184,7 +180,7 @@
       class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-8 md:gap-6 relative"
     >
       <div
-        class="absolute inset-0 bg-gradient-to-br from-pink-400/5 to-purple-400/5 rounded-lg filter blur-3xl"
+        class="absolute inset-0 bg-gradient-to-br from-pink-400/10 to-purple-400/10 rounded-lg filter blur-3xl"
       ></div>
       <Step step={steps[0]}>
         <p>
@@ -225,7 +221,8 @@
     <div class="relative flex flex-col gap-2 text-center">
       <!-- Top decorative line -->
       <div
-        class="absolute top-0 left-1/2 transform -translate-x-1/2 w-2/3 h-0.5 bg-gradient-to-r from-transparent via-pink-400 to-transparent opacity-50"
+        class="absolute top-0 left-1/2 transform -translate-x-1/2 w-2/3 h-1 bg-gradient-to-r from-transparent via-pink-400 to-transparent opacity-70"
+        style="box-shadow: 0 0 8px rgba(236, 72, 153, 0.4);"
       ></div>
 
       <h6 class="text-lg sm:text-xl md:text-2xl pixelated text-purple-300">

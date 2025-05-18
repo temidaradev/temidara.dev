@@ -2,6 +2,8 @@
   import "../app.css";
   import Footer from "../components/Footer.svelte";
   import Header from "../components/Header.svelte";
+  import AnimeBg from "../components/AnimeBg.svelte";
+  import Sakura from "../components/Sakura.svelte";
 
   let y;
   let innerHeight = 0;
@@ -11,6 +13,10 @@
     document.body.scrollIntoView();
   }
 </script>
+
+<!-- Apply AnimeBg and Sakura components at the layout level -->
+<AnimeBg />
+<Sakura />
 
 <div
   class="relative flex flex-col max-w-[1400px] mx-auto w-full text-sm sm:text-base min-h-screen"

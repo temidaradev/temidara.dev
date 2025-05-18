@@ -1,6 +1,4 @@
 <script>
-  import AnimeBg from "./AnimeBg.svelte";
-
   let tabs = [
     {
       name: "School Life",
@@ -28,8 +26,6 @@
     },
   ];
 </script>
-
-<AnimeBg />
 
 <div class="w-full min-h-screen p-8">
   <div class="max-w-4xl mx-auto">
