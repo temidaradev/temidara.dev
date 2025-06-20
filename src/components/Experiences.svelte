@@ -88,8 +88,9 @@
           >jinchuugames<span
             class="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-pink-400 to-transparent opacity-0 group-hover:opacity-100 transition-all"
           ></span></a
-        > as a humble artisan. Under their guidance, I employ the sorcery of GDScript
-        to assist in crafting their grand interactive tapestry.
+        > as a humble artisan. Under their guidance, I initially employed the sorcery
+        of GDScript, but we have since embraced the ancient powers of Odin to forge
+        their grand interactive tapestry.
       </h3>
       <h3 class="text-s sm:text-m md:text-l mt-2 text-violet-200/80">
         September 2024 - Present
@@ -114,6 +115,10 @@
           スキル / Mystical Arts
         </h4>
         <div class="flex flex-wrap gap-2">
+          <span
+            class="px-2 py-1 rounded-md bg-violet-900/30 border border-violet-400/30 text-violet-200 text-sm"
+            >Odin</span
+          >
           <span
             class="px-2 py-1 rounded-md bg-violet-900/30 border border-violet-400/30 text-violet-200 text-sm"
             >GDScript</span
