@@ -121,6 +121,10 @@
           >
           <span
             class="px-2 py-1 rounded-md bg-violet-900/30 border border-violet-400/30 text-violet-200 text-sm"
+            >Raylib</span
+          >
+          <span
+            class="px-2 py-1 rounded-md bg-violet-900/30 border border-violet-400/30 text-violet-200 text-sm"
             >GDScript</span
           >
           <span
