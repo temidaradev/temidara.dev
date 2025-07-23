@@ -8,7 +8,7 @@
   ></div>
 
   <a
-    href="mailto:ahmet.affan.ebcioglu@outlook.com"
+    href="mailto:temidaradev@proton.me"
     class="relative px-6 py-3 bg-slate-900/50 backdrop-blur-sm rounded-xl border-2 border-pink-400/50 hover:border-pink-400 transition-all duration-300 group animate-bounce-slow"
   >
     <div
@@ -42,7 +42,7 @@
         <i class="fa-brands fa-github"></i>
       </a>
       <a
-        href="mailto:ahmet.affan.ebcioglu@outlook.com"
+        href="mailto:temidaradev@proton.me"
         class="text-purple-400 hover:text-purple-300 transform hover:scale-110 transition-all duration-300"
       >
         <i class="fa-solid fa-envelope"></i>
@@ -53,10 +53,10 @@
       <p class="group relative">
         <span class="text-sm text-purple-300 font-medium">Email:</span>
         <a
-          href="mailto:ahmet.affan.ebcioglu@outlook.com"
+          href="mailto:temidaradev@proton.me"
           class="ml-2 text-pink-400 hover:text-pink-300 transition-colors duration-300"
         >
-          ahmet.affan.ebcioglu@outlook.com
+          temidaradev@proton.me
         </a>
       </p>
       <p class="group relative">
