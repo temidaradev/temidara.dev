@@ -207,10 +207,6 @@
           >
           <span
             class="px-2 py-1 rounded-md bg-violet-900/30 border border-violet-400/30 text-violet-200 text-sm"
-            >Solana Web3.py</span
-          >
-          <span
-            class="px-2 py-1 rounded-md bg-violet-900/30 border border-violet-400/30 text-violet-200 text-sm"
             >DeFi Integration</span
           >
         </div>
