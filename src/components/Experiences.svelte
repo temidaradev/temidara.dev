@@ -139,7 +139,85 @@
       </div>
     </div>
 
-    <!-- Experience 2: Open Source Contributor -->
+    <!-- Experience 2: Python Telegram Crypto Bot -->
+    <div class="experience-card group relative mt-8">
+      <!-- Corner decorations -->
+      <div
+        class="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-violet-400/60 -translate-x-1 -translate-y-1 group-hover:border-pink-400/80 transition-colors duration-500"
+        style="box-shadow: -2px -2px 5px rgba(139, 92, 246, 0.3);"
+      ></div>
+      <div
+        class="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-violet-400/60 translate-x-1 translate-y-1 group-hover:border-pink-400/80 transition-colors duration-500"
+        style="box-shadow: 2px 2px 5px rgba(139, 92, 246, 0.3);"
+      ></div>
+
+      <!-- Content -->
+      <h2
+        class="font-bold text-xl sm:text-2xl md:text-3xl text-violet-400 group-hover:text-violet-300 transition-colors duration-300 flex items-center"
+      >
+        <span class="inline-block mr-3 text-pink-400 text-2xl relative">
+          <i class="fa-solid fa-robot"></i>
+          <span
+            class="absolute -top-1 -right-1 w-2 h-2 bg-pink-400 rounded-full opacity-70 group-hover:animate-ping"
+          ></span>
+        </span>
+        Oracle of the Digital Crypts
+      </h2>
+      <h3 class="font-semibold text-m sm:text-l md:text-xl mt-3">
+        I serve as an apprentice in the crafting of a Telegram-bound construct
+        that treads only the lands of Solana. This tool grants folk the means to
+        trade coin and token with modest swiftness, to place orders, mirror the
+        dealings of others, keep account of their holdings, and see their
+        standing among their peers.
+      </h3>
+      <h3 class="text-s sm:text-m md:text-l mt-2 text-violet-200/80">
+        July 2025 - Present
+      </h3>
+
+      <!-- Anime-style divider -->
+      <div class="relative h-1.5 my-4">
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-transparent via-violet-700 to-transparent opacity-70"
+        ></div>
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-transparent via-violet-500 to-transparent opacity-50 blur-sm"
+        ></div>
+        <div
+          class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-pink-400 rounded-full scale-0 group-hover:scale-100 transition-transform duration-500"
+        ></div>
+      </div>
+
+      <!-- Skills list with anime style -->
+      <div class="mt-4">
+        <h4 class="text-pink-400 text-lg mb-2 font-medium">
+          スキル / Mystical Arts
+        </h4>
+        <div class="flex flex-wrap gap-2">
+          <span
+            class="px-2 py-1 rounded-md bg-violet-900/30 border border-violet-400/30 text-violet-200 text-sm"
+            >Python</span
+          >
+          <span
+            class="px-2 py-1 rounded-md bg-violet-900/30 border border-violet-400/30 text-violet-200 text-sm"
+            >Telegram Bot API</span
+          >
+          <span
+            class="px-2 py-1 rounded-md bg-violet-900/30 border border-violet-400/30 text-violet-200 text-sm"
+            >Solana Blockchain</span
+          >
+          <span
+            class="px-2 py-1 rounded-md bg-violet-900/30 border border-violet-400/30 text-violet-200 text-sm"
+            >Solana Web3.py</span
+          >
+          <span
+            class="px-2 py-1 rounded-md bg-violet-900/30 border border-violet-400/30 text-violet-200 text-sm"
+            >DeFi Integration</span
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Experience 3: Open Source Contributor -->
     <div class="experience-card group relative mt-8">
       <!-- Corner decorations -->
       <div
@@ -213,7 +291,7 @@
       </div>
     </div>
 
-    <!-- Experience 3: Self-Education -->
+    <!-- Experience 4: Self-Education -->
     <div class="experience-card group relative mt-8">
       <!-- Corner decorations -->
       <div

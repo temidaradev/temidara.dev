@@ -69,6 +69,11 @@
       yoe: "learning",
       href: "https://odin-lang.org",
     },
+    {
+      name: "Python",
+      yoe: "job",
+      href: "https://www.python.org",
+    },
   ];
   const real_langs = [
     {
