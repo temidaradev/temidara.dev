@@ -1,21 +1,17 @@
 <script>
   import Sakura from "./Sakura.svelte";
-  // Number of particles for floating particle effect
   let particles = Array(20).fill(null);
 </script>
 
 <div class="experiences-container">
-  <!-- Sakura petals overlay for anime style -->
   <div class="sakura-overlay">
     <Sakura />
   </div>
 
-  <!-- Cyberpunk grid background -->
   <div
     class="absolute inset-0 bg-[linear-gradient(transparent_1px,transparent_1px),linear-gradient(90deg,rgba(139,92,246,0.3)_1px,transparent_1px)] bg-[length:20px_20px] opacity-30 pointer-events-none"
   ></div>
 
-  <!-- Floating particles -->
   <div class="absolute inset-0 pointer-events-none">
     {#each particles as _, i}
       <div
@@ -33,7 +29,6 @@
     {/each}
   </div>
 
-  <!-- Decorative anime-style header -->
   <div class="relative text-center mb-10">
     <div
       class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-violet-500/20 rounded-full blur-3xl"
@@ -47,7 +42,6 @@
         ></span>
       </span>
     </h1>
-    <!-- Decorative lines -->
     <div
       class="w-48 h-1 mx-auto mt-4 bg-gradient-to-r from-transparent via-violet-400 to-transparent"
     ></div>
@@ -57,9 +51,7 @@
   </div>
 
   <main class="flex flex-col flex-1 p-4">
-    <!-- Experience 1: Freelance Game Development -->
     <div class="experience-card group relative">
-      <!-- Corner decorations -->
       <div
         class="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-violet-400/60 -translate-x-1 -translate-y-1 group-hover:border-pink-400/80 transition-colors duration-500"
         style="box-shadow: -2px -2px 5px rgba(139, 92, 246, 0.3);"
@@ -69,7 +61,6 @@
         style="box-shadow: 2px 2px 5px rgba(139, 92, 246, 0.3);"
       ></div>
 
-      <!-- Content -->
       <h2
         class="font-bold text-xl sm:text-2xl md:text-3xl text-violet-400 group-hover:text-violet-300 transition-colors duration-300 flex items-center"
       >
@@ -96,7 +87,6 @@
         September 2024 - Present
       </h3>
 
-      <!-- Anime-style divider -->
       <div class="relative h-1.5 my-4">
         <div
           class="absolute inset-0 bg-gradient-to-r from-transparent via-violet-700 to-transparent opacity-70"
@@ -109,7 +99,6 @@
         ></div>
       </div>
 
-      <!-- Skills list with anime style -->
       <div class="mt-4">
         <h4 class="text-pink-400 text-lg mb-2 font-medium">
           スキル / Mystical Arts
@@ -139,9 +128,7 @@
       </div>
     </div>
 
-    <!-- Experience 2: Python Telegram Crypto Bot -->
     <div class="experience-card group relative mt-8">
-      <!-- Corner decorations -->
       <div
         class="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-violet-400/60 -translate-x-1 -translate-y-1 group-hover:border-pink-400/80 transition-colors duration-500"
         style="box-shadow: -2px -2px 5px rgba(139, 92, 246, 0.3);"
@@ -151,7 +138,6 @@
         style="box-shadow: 2px 2px 5px rgba(139, 92, 246, 0.3);"
       ></div>
 
-      <!-- Content -->
       <h2
         class="font-bold text-xl sm:text-2xl md:text-3xl text-violet-400 group-hover:text-violet-300 transition-colors duration-300 flex items-center"
       >
@@ -174,7 +160,6 @@
         July 2025 - Present
       </h3>
 
-      <!-- Anime-style divider -->
       <div class="relative h-1.5 my-4">
         <div
           class="absolute inset-0 bg-gradient-to-r from-transparent via-violet-700 to-transparent opacity-70"
@@ -187,7 +172,6 @@
         ></div>
       </div>
 
-      <!-- Skills list with anime style -->
       <div class="mt-4">
         <h4 class="text-pink-400 text-lg mb-2 font-medium">
           スキル / Mystical Arts
@@ -213,9 +197,7 @@
       </div>
     </div>
 
-    <!-- Experience 3: Open Source Contributor -->
     <div class="experience-card group relative mt-8">
-      <!-- Corner decorations -->
       <div
         class="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-violet-400/60 -translate-x-1 -translate-y-1 group-hover:border-pink-400/80 transition-colors duration-500"
         style="box-shadow: -2px -2px 5px rgba(139, 92, 246, 0.3);"
@@ -225,7 +207,6 @@
         style="box-shadow: 2px 2px 5px rgba(139, 92, 246, 0.3);"
       ></div>
 
-      <!-- Content -->
       <h2
         class="font-bold text-xl sm:text-2xl md:text-3xl text-violet-400 group-hover:text-violet-300 transition-colors duration-300 flex items-center"
       >
@@ -248,7 +229,6 @@
         May 2023 - Present
       </h3>
 
-      <!-- Anime-style divider -->
       <div class="relative h-1.5 my-4">
         <div
           class="absolute inset-0 bg-gradient-to-r from-transparent via-violet-700 to-transparent opacity-70"
@@ -261,7 +241,6 @@
         ></div>
       </div>
 
-      <!-- Skills list with anime style -->
       <div class="mt-4">
         <h4 class="text-pink-400 text-lg mb-2 font-medium">
           スキル / Mystical Arts
@@ -283,9 +262,7 @@
       </div>
     </div>
 
-    <!-- Experience 4: Self-Education -->
     <div class="experience-card group relative mt-8">
-      <!-- Corner decorations -->
       <div
         class="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-violet-400/60 -translate-x-1 -translate-y-1 group-hover:border-pink-400/80 transition-colors duration-500"
         style="box-shadow: -2px -2px 5px rgba(139, 92, 246, 0.3);"
@@ -295,7 +272,6 @@
         style="box-shadow: 2px 2px 5px rgba(139, 92, 246, 0.3);"
       ></div>
 
-      <!-- Content -->
       <h2
         class="font-bold text-xl sm:text-2xl md:text-3xl text-violet-400 group-hover:text-violet-300 transition-colors duration-300 flex items-center"
       >
@@ -319,7 +295,6 @@
         2018 - Present
       </h3>
 
-      <!-- Anime-style divider -->
       <div class="relative h-1.5 my-4">
         <div
           class="absolute inset-0 bg-gradient-to-r from-transparent via-violet-700 to-transparent opacity-70"
@@ -332,7 +307,6 @@
         ></div>
       </div>
 
-      <!-- Skills list with anime style -->
       <div class="mt-4">
         <h4 class="text-pink-400 text-lg mb-2 font-medium">
           スキル / Mystical Arts
@@ -409,7 +383,6 @@
       0 0 40px rgba(216, 180, 254, 0.2);
   }
 
-  /* Card background glow effect */
   .experience-card::before {
     content: "";
     position: absolute;
@@ -428,7 +401,6 @@
     opacity: 1;
   }
 
-  /* Anime-style decorative elements */
   .experiences-container::before,
   .experiences-container::after {
     content: "";

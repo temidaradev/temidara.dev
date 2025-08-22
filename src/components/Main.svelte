@@ -1,6 +1,5 @@
 <script>
   import Step from "./Step.svelte";
-  import Techs from "./Techs.svelte";
 
   let steps = [
     {
@@ -231,7 +230,6 @@
     class="py-20 pt-10 lg:pt-16 lg:py-32 flex flex-col gap-16 sm:gap-20 md:gap-24 relative"
   >
     <div class="relative flex flex-col gap-2 text-center">
-      <!-- Top decorative line -->
       <div
         class="absolute top-0 left-1/2 transform -translate-x-1/2 w-2/3 h-1 bg-gradient-to-r from-transparent via-pink-400 to-transparent opacity-70"
         style="box-shadow: 0 0 8px rgba(236, 72, 153, 0.4);"
@@ -247,7 +245,6 @@
         of My Origins
       </h3>
 
-      <!-- Bottom decorative line -->
       <div
         class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-2/3 h-0.5 bg-gradient-to-r from-transparent via-purple-400 to-transparent opacity-50"
       ></div>

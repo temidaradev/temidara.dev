@@ -7,7 +7,6 @@
   const url =
     "https://raw.githubusercontent.com/temidaradev/NeuraTalk/refs/heads/master/README.md";
 
-  // Fallback content in case GitHub fetch fails
   const fallbackContent = `
 # NeuraTalk
 
@@ -35,11 +34,11 @@ A modern, user-friendly GUI application for interacting with local Ollama langua
   async function fetchContent() {
     try {
       const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), 10000); // 10 second timeout
+      const timeoutId = setTimeout(() => controller.abort(), 10000);
 
       const response = await fetch(url, {
         signal: controller.signal,
-        cache: "no-cache", // Prevent caching issues
+        cache: "no-cache",
       });
 
       clearTimeout(timeoutId);
@@ -62,15 +61,13 @@ A modern, user-friendly GUI application for interacting with local Ollama langua
       return marked(text);
     } catch (e) {
       console.error("Error fetching content:", e);
-      // Use fallback content instead of showing an error
       return marked(fallbackContent);
     } finally {
       isLoading = false;
-      error = null; // Clear any errors since we're using fallback content
+      error = null;
     }
   }
 
-  // Call the function immediately when the component is mounted
   onMount(() => {
     fetchContent().then((result) => {
       content = result;

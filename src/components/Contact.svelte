@@ -6,7 +6,6 @@
   let submitStatus = { success: false, message: "" };
   let formVisible = true;
 
-  // Function to handle form submission
   async function handleSubmit() {
     if (!name || !email || !message) {
       submitStatus = {
@@ -19,7 +18,6 @@
     isSubmitting = true;
     submitStatus = { success: false, message: "" };
 
-    // Simulate form submission - in a real implementation, you would use a form service like Formspree
     setTimeout(() => {
       isSubmitting = false;
       submitStatus = {
@@ -29,12 +27,10 @@
       };
       formVisible = false;
 
-      // Reset form after successful submission
       name = "";
       email = "";
       message = "";
 
-      // Show form again after a few seconds
       setTimeout(() => {
         formVisible = true;
         submitStatus = { success: false, message: "" };
@@ -44,14 +40,11 @@
 </script>
 
 <section class="contact-section relative py-16">
-  <!-- Anime-style background elements -->
   <div class="absolute inset-0 overflow-hidden z-[-1]">
-    <!-- Cyberpunk grid background -->
     <div
       class="absolute inset-0 bg-[linear-gradient(transparent_1px,transparent_1px),linear-gradient(90deg,rgba(139,92,246,0.2)_1px,transparent_1px)] bg-[length:30px_30px] opacity-30 pointer-events-none"
     ></div>
 
-    <!-- Glowing circles -->
     <div
       class="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-pink-600/20 filter blur-[70px] animate-pulse-slow"
     ></div>
@@ -60,7 +53,6 @@
     ></div>
   </div>
 
-  <!-- Section header -->
   <div class="relative text-center mb-12">
     <h2 class="text-3xl md:text-4xl font-bold mb-3">
       <span class="text-violet-400 font-medium">コンタクト</span>
@@ -77,7 +69,6 @@
     </p>
   </div>
 
-  <!-- Contact form -->
   {#if formVisible}
     <form
       on:submit|preventDefault={handleSubmit}
@@ -159,7 +150,6 @@
       {/if}
     </form>
   {:else}
-    <!-- Thank you message after submission -->
     <div
       class="max-w-md mx-auto bg-slate-900/40 backdrop-blur-lg border border-green-500/20 rounded-lg p-8 text-center shadow-lg animate-fade-in"
       style="box-shadow: 0 0 25px rgba(74, 222, 128, 0.15);"
@@ -174,7 +164,6 @@
     </div>
   {/if}
 
-  <!-- Social media links -->
   <div class="flex justify-center mt-10 space-x-6">
     <a
       href="https://x.com/temidaradev"
@@ -192,7 +181,6 @@
     >
       <i class="fa-brands fa-github text-2xl"></i>
     </a>
-    <!-- Add more social links as needed -->
   </div>
 </section>
 

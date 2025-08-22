@@ -19,6 +19,7 @@
   <div class="game-embed">
     <div class="iframe-container">
       <iframe
+        title="The Unspooled Self Demo"
         frameborder="0"
         src="https://itch.io/embed/3446861?bg_color=000000&amp;fg_color=ffffff&amp;link_color=2a48ff&amp;border_color=bebebe"
         width="552"

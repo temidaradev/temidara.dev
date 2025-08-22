@@ -1,19 +1,15 @@
 <script>
   import { onMount } from "svelte";
 
-  // Responsive petal count based on device
   let petals = [];
   let isMobile = false;
 
   onMount(() => {
-    // Check if device is mobile
     isMobile = window.innerWidth < 768;
 
-    // Adjust petal count based on device
     const count = isMobile ? 15 : 40;
     petals = Array(count).fill(null);
 
-    // Add resize listener to adjust petal count dynamically
     const handleResize = () => {
       const newIsMobile = window.innerWidth < 768;
       if (newIsMobile !== isMobile) {
@@ -102,7 +98,6 @@
     animation: float ease-in-out infinite;
   }
 
-  /* Add a subtle sway to each petal */
   .animate-float > div {
     animation: sway 3s ease-in-out infinite;
     transform-origin: center;

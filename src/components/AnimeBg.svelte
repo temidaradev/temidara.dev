@@ -1,7 +1,5 @@
 <div class="fixed inset-0 w-full h-full -z-10">
-  <!-- Animated gradient background -->
   <div class="absolute inset-0 bg-[#0D0B1F]">
-    <!-- Magical circle -->
     <div
       class="absolute top-1/4 right-1/4 w-96 h-96 opacity-40 animate-spin-slow"
     >
@@ -14,7 +12,6 @@
       <div
         class="absolute inset-4 rounded-full border-2 border-pink-400/60"
       ></div>
-      <!-- Magic runes -->
       {#each Array(12) as _, i}
         <div
           class="absolute w-5 h-5 text-pink-400 animate-glow"
@@ -31,23 +28,19 @@
       {/each}
     </div>
 
-    <!-- Main gradients -->
     <div
       class="absolute inset-0 opacity-70 bg-gradient-radial from-purple-600/40 via-pink-500/30 to-transparent animate-pulse"
     ></div>
     <div
       class="absolute inset-0 opacity-60 bg-[radial-gradient(circle_at_50%_50%,rgba(255,105,180,0.5),transparent_70%)] animate-pulse-slow"
     ></div>
-    <!-- Additional cyberpunk-anime grid -->
     <div
       class="absolute inset-0 bg-[linear-gradient(transparent_1px,transparent_1px),linear-gradient(90deg,rgba(255,105,180,0.3)_1px,transparent_1px)] bg-[length:20px_20px] opacity-50"
     ></div>
-    <!-- Energy field effect -->
     <div
       class="absolute inset-0 bg-gradient-to-t from-purple-500/20 via-transparent to-pink-500/20 animate-pulse-slow"
     ></div>
 
-    <!-- Magical sparks -->
     {#each Array(70) as _, i}
       <div
         class="absolute rounded-full bg-gradient-to-r from-pink-400 to-purple-400 animate-magic-spark"
@@ -64,7 +57,6 @@
       ></div>
     {/each}
 
-    <!-- Power lines -->
     {#each Array(3) as _, i}
       <div
         class="absolute h-full w-[3px] bg-gradient-to-b from-transparent via-pink-400/70 to-transparent animate-power-surge"
@@ -77,7 +69,6 @@
     {/each}
   </div>
 
-  <!-- Decorative lines -->
   <div class="absolute inset-0 overflow-hidden">
     {#each Array(8) as _, i}
       <div
@@ -101,7 +92,6 @@
     {/each}
   </div>
 
-  <!-- Floating particles -->
   <div class="absolute inset-0">
     {#each Array(40) as _, i}
       <div

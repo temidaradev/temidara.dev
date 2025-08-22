@@ -41,7 +41,7 @@
   .game-title {
     font-size: 3rem;
     font-weight: bold;
-    color: #bd93f9; /* Purple color */
+    color: #bd93f9;
     text-align: center;
     margin-bottom: 0.5rem;
     text-shadow: 0 0 15px rgba(189, 147, 249, 0.7);
@@ -51,7 +51,7 @@
 
   .game-subtitle {
     font-size: 1.2rem;
-    color: #ff79c6; /* Pink color */
+    color: #ff79c6;
     text-align: center;
     margin-bottom: 2rem;
     text-shadow: 0 0 8px rgba(255, 121, 198, 0.5);
@@ -59,7 +59,6 @@
     z-index: 2;
   }
 
-  /* Anime-style decorative elements */
   .game-container::before,
   .game-container::after {
     content: "";

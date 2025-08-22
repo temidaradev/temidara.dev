@@ -1,7 +1,6 @@
 <footer
   class="relative py-20 sm:py-32 flex flex-col gap-4 sm:gap-8 justify-center items-center"
 >
-  <!-- Decorative anime-style border -->
   <div
     class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-pink-400 to-transparent opacity-50"
     style="box-shadow: 0 0 10px rgba(236, 72, 153, 0.5);"
@@ -73,7 +72,6 @@
     </div>
   </div>
 
-  <!-- Bottom decorative border -->
   <div
     class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-purple-400 to-transparent opacity-50"
   ></div>

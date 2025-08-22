@@ -13,7 +13,6 @@
   }
 </script>
 
-<!-- Apply only Sakura component at the layout level -->
 <Sakura />
 
 <div

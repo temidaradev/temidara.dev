@@ -1,8 +1,6 @@
 <script>
   import { slide } from "svelte/transition";
 
-  export let y;
-
   let tabs = [
     { name: "Chronicles", link: "/blog" },
     { name: "Quests", link: "/experiences" },
@@ -29,7 +27,6 @@
       </h1>
     </a>
 
-    <!-- Mobile Menu Button -->
     <button
       class="lg:hidden flex items-center text-pink-400 hover:text-purple-400 transition-colors duration-300"
       on:click={toggleMenu}
@@ -42,7 +39,6 @@
       {/if}
     </button>
 
-    <!-- Desktop Navigation -->
     <nav class="hidden lg:flex items-center gap-8">
       {#each tabs as tab}
         <a
@@ -57,7 +53,6 @@
         </a>
       {/each}
 
-      <!-- Connect Button -->
       <a
         href="https://x.com/temidaradev"
         target="_blank"
@@ -76,7 +71,6 @@
     </nav>
   </div>
 
-  <!-- Mobile Menu (Dropdown) -->
   {#if menuOpen}
     <div
       class="lg:hidden absolute w-full bg-slate-900/95 border-t border-pink-400/20 backdrop-blur-lg shadow-lg shadow-pink-500/10 animate-fade-in-down z-20"
@@ -97,7 +91,6 @@
           </a>
         {/each}
 
-        <!-- Mobile Connect Button -->
         <a
           href="https://x.com/temidaradev"
           target="_blank"
@@ -136,16 +129,7 @@
     }
   }
 
-  .animate-gradient {
-    animation: gradient 3s linear infinite;
-    background-size: 300% 300%;
-  }
-
   .animate-fade-in-down {
     animation: fadeInDown 0.3s forwards;
-  }
-
-  .bg-300\% {
-    background-size: 300% 100%;
   }
 </style>
