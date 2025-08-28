@@ -10,6 +10,7 @@
       summary:
         "A simple, open-source command-line chat application in Rust for peer-to-peer, encrypted messaging with no central server.",
       component: RustP2PChat,
+      webm: "https://github.com/user-attachments/assets/1325c830-45b2-4e6a-bf31-a450a923bb86",
     },
   ];
 
@@ -22,6 +23,45 @@
   function backToList() {
     selectedPost = null;
   }
+
+  import { afterUpdate, onDestroy } from "svelte";
+  let proseDiv;
+  let observer;
+
+  function replaceWebmLinksWithVideo() {
+    if (!proseDiv) return;
+    // Find all anchor tags linking to .webm files
+    const links = proseDiv.querySelectorAll('a[href$=".webm"]');
+    links.forEach((link) => {
+      const url = link.getAttribute("href");
+      // Only replace if not already replaced
+      if (!link.dataset.webmReplaced) {
+        const video = document.createElement("video");
+        video.setAttribute("controls", "");
+        video.setAttribute(
+          "class",
+          "rounded-lg shadow-lg max-w-full h-auto bg-black border border-pink-400/20 my-4"
+        );
+        video.innerHTML = `<source src="${url}" type="video/webm">Your browser does not support the WebM video format.`;
+        link.parentNode.insertBefore(video, link);
+        link.style.display = "none";
+        link.dataset.webmReplaced = "true";
+      }
+    });
+  }
+
+  afterUpdate(() => {
+    replaceWebmLinksWithVideo();
+    // Optionally, observe for further changes
+    if (observer) observer.disconnect();
+    observer = new MutationObserver(replaceWebmLinksWithVideo);
+    if (proseDiv)
+      observer.observe(proseDiv, { childList: true, subtree: true });
+  });
+
+  onDestroy(() => {
+    if (observer) observer.disconnect();
+  });
 </script>
 
 <div class="w-full min-h-screen p-8">
@@ -69,11 +109,30 @@
         >
           <i class="fa-solid fa-arrow-left"></i> Back to posts
         </button>
+        {#if selectedPost.webm}
+          <div class="mb-4 flex justify-center">
+            <video
+              controls
+              class="rounded-lg shadow-lg max-w-full h-auto bg-black border border-pink-400/20"
+            >
+              <source src={selectedPost.webm} type="video/webm" />
+              <track kind="captions" label="No captions" />
+              Your browser does not support the WebM video format.
+            </video>
+          </div>
+        {/if}
         <div
           class="prose prose-invert max-w-none bg-slate-900/60 rounded-xl border border-pink-400/10 p-4"
         >
           {#if selectedPost.component}
-            <svelte:component this={selectedPost.component} />
+            <svelte:component this={selectedPost.component} let:htmlContent>
+              {@html htmlContent &&
+                htmlContent.replace(
+                  /<a href=\"(.*?\.webm)\".*?>(.*?)<\/a>/g,
+                  (match, url, text) =>
+                    `<video controls class='rounded-lg shadow-lg max-w-full h-auto bg-black border border-pink-400/20 my-4'><source src='${url}' type='video/webm'>Your browser does not support the WebM video format.</video>`
+                )}
+            </svelte:component>
           {/if}
         </div>
       </div>
