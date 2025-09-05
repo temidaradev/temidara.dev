@@ -1,67 +1,25 @@
 <script>
-  // Posts for Tech Blog
-  import { onMount } from "svelte";
-  import RustP2PChat from "../../../components/blog/RustP2PChat.svelte";
   let posts = [
+    {
+      title: "NeuralRust: A Neural Network Implementation in Rust",
+      date: "2025-09-05",
+      summary:
+        "A neural network implementation written in Rust, designed for learning and experimentation with machine learning concepts.",
+      slug: "NeuralRust",
+    },
     {
       title:
         "Introducing rust-p2p-chat: A Minimal Peer-to-Peer CLI Chat App in Rust",
       date: "2025-08-22",
       summary:
         "A simple, open-source command-line chat application in Rust for peer-to-peer, encrypted messaging with no central server.",
-      component: RustP2PChat,
-      webm: "https://github.com/user-attachments/assets/1325c830-45b2-4e6a-bf31-a450a923bb86",
+      slug: "rust-p2p-chat",
     },
   ];
 
-  let selectedPost = null;
-
-  function showPost(post) {
-    selectedPost = post;
+  function navigateToPost(slug) {
+    window.location.href = `/blog/tech/${slug}`;
   }
-
-  function backToList() {
-    selectedPost = null;
-  }
-
-  import { afterUpdate, onDestroy } from "svelte";
-  let proseDiv;
-  let observer;
-
-  function replaceWebmLinksWithVideo() {
-    if (!proseDiv) return;
-    // Find all anchor tags linking to .webm files
-    const links = proseDiv.querySelectorAll('a[href$=".webm"]');
-    links.forEach((link) => {
-      const url = link.getAttribute("href");
-      // Only replace if not already replaced
-      if (!link.dataset.webmReplaced) {
-        const video = document.createElement("video");
-        video.setAttribute("controls", "");
-        video.setAttribute(
-          "class",
-          "rounded-lg shadow-lg max-w-full h-auto bg-black border border-pink-400/20 my-4"
-        );
-        video.innerHTML = `<source src="${url}" type="video/webm">Your browser does not support the WebM video format.`;
-        link.parentNode.insertBefore(video, link);
-        link.style.display = "none";
-        link.dataset.webmReplaced = "true";
-      }
-    });
-  }
-
-  afterUpdate(() => {
-    replaceWebmLinksWithVideo();
-    // Optionally, observe for further changes
-    if (observer) observer.disconnect();
-    observer = new MutationObserver(replaceWebmLinksWithVideo);
-    if (proseDiv)
-      observer.observe(proseDiv, { childList: true, subtree: true });
-  });
-
-  onDestroy(() => {
-    if (observer) observer.disconnect();
-  });
 </script>
 
 <div class="w-full min-h-screen p-8">
@@ -84,58 +42,20 @@
       ></div>
     </div>
 
-    {#if !selectedPost}
-      <div class="space-y-6">
-        {#each posts as post}
-          <button
-            on:click={() => showPost(post)}
-            class="w-full text-left block p-6 rounded-lg bg-slate-800/60 border border-pink-400/10 hover:border-pink-400/40 transition-all duration-200 cursor-pointer"
-          >
-            <div class="flex flex-col gap-1">
-              <span class="text-pink-300 text-xl font-semibold"
-                >{post.title}</span
-              >
-              <span class="text-xs text-purple-200/60">{post.date}</span>
-              <span class="text-purple-100/80 text-base">{post.summary}</span>
-            </div>
-          </button>
-        {/each}
-      </div>
-    {:else}
-      <div class="mb-6">
+    <div class="space-y-6">
+      {#each posts as post}
         <button
-          on:click={backToList}
-          class="text-pink-300 hover:text-pink-200 text-sm mb-4 flex items-center gap-2"
+          on:click={() => navigateToPost(post.slug)}
+          class="w-full text-left block p-6 rounded-lg bg-slate-800/60 border border-pink-400/10 hover:border-pink-400/40 transition-all duration-200 cursor-pointer hover:transform hover:scale-105"
         >
-          <i class="fa-solid fa-arrow-left"></i> Back to posts
-        </button>
-        {#if selectedPost.webm}
-          <div class="mb-4 flex justify-center">
-            <video
-              controls
-              class="rounded-lg shadow-lg max-w-full h-auto bg-black border border-pink-400/20"
+          <div class="flex flex-col gap-1">
+            <span class="text-pink-300 text-xl font-semibold">{post.title}</span
             >
-              <source src={selectedPost.webm} type="video/webm" />
-              <track kind="captions" label="No captions" />
-              Your browser does not support the WebM video format.
-            </video>
+            <span class="text-xs text-purple-200/60">{post.date}</span>
+            <span class="text-purple-100/80 text-base">{post.summary}</span>
           </div>
-        {/if}
-        <div
-          class="prose prose-invert max-w-none bg-slate-900/60 rounded-xl border border-pink-400/10 p-4"
-        >
-          {#if selectedPost.component}
-            <svelte:component this={selectedPost.component} let:htmlContent>
-              {@html htmlContent &&
-                htmlContent.replace(
-                  /<a href=\"(.*?\.webm)\".*?>(.*?)<\/a>/g,
-                  (match, url, text) =>
-                    `<video controls class='rounded-lg shadow-lg max-w-full h-auto bg-black border border-pink-400/20 my-4'><source src='${url}' type='video/webm'>Your browser does not support the WebM video format.</video>`
-                )}
-            </svelte:component>
-          {/if}
-        </div>
-      </div>
-    {/if}
+        </button>
+      {/each}
+    </div>
   </div>
 </div>

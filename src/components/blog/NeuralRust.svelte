@@ -5,9 +5,9 @@
   import { fade, fly } from "svelte/transition";
 
   const url =
-    "https://raw.githubusercontent.com/temidaradev/rust-p2p-chat/refs/heads/serve-cli/README.md";
+    "https://raw.githubusercontent.com/temidaradev/NeuralRust/refs/heads/master/README.md";
 
-  const fallbackContent = `\n# rust-p2p-chat\n\nA simple, open-source command-line chat application in Rust for peer-to-peer, encrypted messaging with no central server.\n`;
+  const fallbackContent = `\n# NeuralRust\n\nA neural network implementation written in Rust, designed for learning and experimentation with machine learning concepts.\n`;
 
   let content = "";
   let error = null;
@@ -78,7 +78,7 @@
   {#if isLoading}
     <div class="flex justify-center items-center h-40" in:fade>
       <div class="loading-container">
-        <span class="text-pink-400 text-xl">Loading rust-p2p-chat...</span>
+        <span class="text-pink-400 text-xl">Loading NeuralRust...</span>
         <div class="loading-animation"></div>
       </div>
     </div>
