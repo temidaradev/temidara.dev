@@ -14,8 +14,7 @@
       <RustP2PChat />
       <VideoPlayer
         title="Rust P2P Chat Demo"
-        readmeUrl="https://raw.githubusercontent.com/temidaradev/rust-p2p-chat/refs/heads/serve-cli/README.md"
-        placeholder="/static/video-placeholder.jpg"
+        readmeUrl="https://raw.githubusercontent.com/temidaradev/rust-p2p-chat/refs/heads/main/README.md"
       />
     </div>
 

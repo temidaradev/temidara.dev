@@ -5,7 +5,7 @@
   import { fade, fly } from "svelte/transition";
 
   const url =
-    "https://raw.githubusercontent.com/temidaradev/rust-p2p-chat/refs/heads/serve-cli/README.md";
+    "https://raw.githubusercontent.com/temidaradev/rust-p2p-chat/refs/heads/main/README.md";
 
   const fallbackContent = `\n# rust-p2p-chat\n\nA simple, open-source command-line chat application in Rust for peer-to-peer, encrypted messaging with no central server.\n`;
 
