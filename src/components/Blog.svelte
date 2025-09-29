@@ -13,7 +13,7 @@
       icon: "fa-solid fa-gamepad",
       description:
         "Exploring game development, sharing insights, and documenting my progress",
-      link: "/blog/game",
+      link: "/game",
       bgClass: "from-purple-400/10 to-pink-400/10",
     },
     {
