@@ -1,6 +1,13 @@
 <script>
   let posts = [
     {
+      title: "NixOS Configuration: Complete Desktop Environment with Hyprland",
+      date: "2025-09-30",
+      summary:
+        "A comprehensive NixOS configuration flake featuring Hyprland window manager, development tools, gaming support, and reproducible system management.",
+      slug: "nixos",
+    },
+    {
       title: "NeuralRust: A Neural Network Implementation in Rust",
       date: "2025-09-05",
       summary:

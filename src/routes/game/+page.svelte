@@ -75,14 +75,22 @@
   .game-container::before {
     top: 5%;
     left: 5%;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='none'%3E%3Ccircle cx='50' cy='50' r='40' stroke='%23bd93f9' stroke-width='2'/%3E%3Ccircle cx='50' cy='50' r='30' stroke='%23bd93f9' stroke-width='1'/%3E%3Cpath d='M50,10 L50,90 M10,50 L90,50' stroke='%23bd93f9' stroke-width='1' opacity='0.6'/%3E%3C/svg%3E");
+    background: radial-gradient(
+      circle,
+      rgba(189, 147, 249, 0.3) 0%,
+      transparent 70%
+    );
     animation: pulse-rotate 15s infinite linear;
   }
 
   .game-container::after {
     bottom: 5%;
     right: 5%;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='none'%3E%3Cpath d='M20,20 L80,80 M20,80 L80,20' stroke='%23ff79c6' stroke-width='2'/%3E%3Ccircle cx='50' cy='50' r='40' stroke='%23ff79c6' stroke-width='2' stroke-dasharray='10 5'/%3E%3C/svg%3E");
+    background: radial-gradient(
+      circle,
+      rgba(255, 121, 198, 0.3) 0%,
+      transparent 70%
+    );
     animation: pulse-rotate 20s infinite linear reverse;
   }
 
