@@ -1,14 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --primary: #FF69B4;
-  --secondary: #9D72FF;
-  --background: #1a1a2e;
-  --anime-glow: 0 0 10px var(--primary), 0 0 20px var(--primary), 0 0 30px var(--primary);
-  --anime-shadow: 0 0 15px rgba(255, 105, 180, 0.3);
+    --primary: #ff69b4;
+    --secondary: #9d72ff;
+    --background: #1a1a2e;
+    --anime-glow:
+        0 0 10px var(--primary), 0 0 20px var(--primary),
+        0 0 30px var(--primary);
+    --anime-shadow: 0 0 15px rgba(255, 105, 180, 0.3);
 }
 
 html {
@@ -20,14 +22,14 @@ html {
 }
 
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 h1,
 h2,
 h3,
 .poppins {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .anime-text-glow {
@@ -40,5 +42,5 @@ h3,
 }
 
 .pixelated {
-    font-family: 'VT323', monospace;
+    font-family: "VT323", monospace;
 }

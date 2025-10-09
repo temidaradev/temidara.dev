@@ -1,5 +1,5 @@
 .markdown-content {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #f8f8f2;
     background-color: rgba(13, 12, 33, 0.85);
@@ -7,27 +7,27 @@
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(255, 121, 198, 0.2);
     border: 1px solid rgba(255, 121, 198, 0.15);
-  }
-  
-  /* Headings */
-  .markdown-content h1 {
+}
+
+/* Headings */
+.markdown-content h1 {
     color: #ff79c6;
     font-size: 2.2rem;
     border-bottom: 2px solid #ff79c6;
     padding-bottom: 5px;
     text-shadow: 0 0 10px rgba(255, 121, 198, 0.5);
-  }
-  
-  .markdown-content h2 {
+}
+
+.markdown-content h2 {
     color: #bd93f9;
     font-size: 1.8rem;
     border-bottom: 1px solid #bd93f9;
     padding-bottom: 3px;
     text-shadow: 0 0 8px rgba(189, 147, 249, 0.5);
-  }
-  
-  /* Ensure images have a higher z-index and proper isolation */
-  .markdown-content img {
+}
+
+/* Ensure images have a higher z-index and proper isolation */
+.markdown-content img {
     position: relative;
     z-index: 10;
     display: block;
@@ -36,10 +36,10 @@
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(255, 121, 198, 0.3);
     isolation: isolate;
-  }
-  
-  /* Code Blocks */
-  .markdown-content pre {
+}
+
+/* Code Blocks */
+.markdown-content pre {
     background: rgba(40, 42, 54, 0.8);
     padding: 15px;
     border-radius: 8px;
@@ -47,65 +47,64 @@
     border-left: 3px solid #ff79c6;
     margin: 1rem 0;
     box-shadow: 0 0 10px rgba(189, 147, 249, 0.15);
-  }
-  
-  .markdown-content code {
+}
+
+.markdown-content code {
     font-family: "Fira Code", "Courier New", monospace;
     color: #50fa7b;
-  }
-  
-  /* Links */
-  .markdown-content a {
+}
+
+/* Links */
+.markdown-content a {
     color: #8be9fd;
     text-decoration: none;
     position: relative;
     transition: all 0.3s ease;
-  }
-  
-  .markdown-content a:hover {
+}
+
+.markdown-content a:hover {
     color: #ff79c6;
     text-shadow: 0 0 5px rgba(255, 121, 198, 0.5);
-  }
-  
-  /* Lists */
-  .markdown-content ul {
+}
+
+/* Lists */
+.markdown-content ul {
     padding-left: 20px;
     list-style-type: none;
-  }
-  
-  .markdown-content li {
+}
+
+.markdown-content li {
     margin-bottom: 8px;
     position: relative;
-  }
-  
-  .markdown-content li::before {
+}
+
+.markdown-content li::before {
     content: "★";
     color: #ffb86c;
     position: absolute;
     left: -20px;
-  }
-  
-  /* Additional styling */
-  .markdown-content p {
+}
+
+/* Additional styling */
+.markdown-content p {
     margin-bottom: 1rem;
-  }
-  
-  .markdown-content img {
+}
+
+.markdown-content img {
     max-width: 100%;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
-  }
-  
-  .markdown-content img:hover {
+}
+
+.markdown-content img:hover {
     transform: scale(1.02);
-  }
-  
-  .markdown-content blockquote {
+}
+
+.markdown-content blockquote {
     border-left: 4px solid #6272a4;
     padding: 10px 15px;
     margin: 1rem 0;
     background: rgba(98, 114, 164, 0.1);
     border-radius: 0 5px 5px 0;
-  }
-  
+}

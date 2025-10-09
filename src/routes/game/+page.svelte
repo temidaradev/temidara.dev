@@ -1,122 +1,122 @@
 <script>
-  import Game from "../../components/Game.svelte";
-  import Sakura from "../../components/Sakura.svelte";
+    import Game from "../../components/Game.svelte";
+    import Sakura from "../../components/Sakura.svelte";
 </script>
 
 <div class="game-container">
-  <div class="sakura-overlay">
-    <Sakura />
-  </div>
+    <div class="sakura-overlay">
+        <Sakura />
+    </div>
 
-  <h1 class="game-title">The Unspooled Self</h1>
-  <p class="game-subtitle">A Journey of Self-Discovery</p>
+    <h1 class="game-title">The Unspooled Self</h1>
+    <p class="game-subtitle">A Journey of Self-Discovery</p>
 
-  <Game />
+    <Game />
 </div>
 
 <style>
-  .game-container {
-    position: relative;
-    min-height: 100vh;
-    padding: 2rem 1rem;
-    background: linear-gradient(
-      135deg,
-      rgba(13, 12, 33, 0.95) 0%,
-      rgba(45, 41, 87, 0.8) 100%
-    );
-    overflow: hidden;
-  }
-
-  .sakura-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: 1;
-    opacity: 0.6;
-  }
-
-  .game-title {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #bd93f9;
-    text-align: center;
-    margin-bottom: 0.5rem;
-    text-shadow: 0 0 15px rgba(189, 147, 249, 0.7);
-    position: relative;
-    z-index: 2;
-  }
-
-  .game-subtitle {
-    font-size: 1.2rem;
-    color: #ff79c6;
-    text-align: center;
-    margin-bottom: 2rem;
-    text-shadow: 0 0 8px rgba(255, 121, 198, 0.5);
-    position: relative;
-    z-index: 2;
-  }
-
-  .game-container::before,
-  .game-container::after {
-    content: "";
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    z-index: 1;
-    opacity: 0.3;
-    pointer-events: none;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-
-  .game-container::before {
-    top: 5%;
-    left: 5%;
-    background: radial-gradient(
-      circle,
-      rgba(189, 147, 249, 0.3) 0%,
-      transparent 70%
-    );
-    animation: pulse-rotate 15s infinite linear;
-  }
-
-  .game-container::after {
-    bottom: 5%;
-    right: 5%;
-    background: radial-gradient(
-      circle,
-      rgba(255, 121, 198, 0.3) 0%,
-      transparent 70%
-    );
-    animation: pulse-rotate 20s infinite linear reverse;
-  }
-
-  @keyframes pulse-rotate {
-    0% {
-      transform: rotate(0deg) scale(1);
-    }
-    50% {
-      transform: rotate(180deg) scale(1.05);
-    }
-    100% {
-      transform: rotate(360deg) scale(1);
-    }
-  }
-
-  @media (min-width: 768px) {
     .game-container {
-      padding: 3rem;
+        position: relative;
+        min-height: 100vh;
+        padding: 2rem 1rem;
+        background: linear-gradient(
+            135deg,
+            rgba(13, 12, 33, 0.95) 0%,
+            rgba(45, 41, 87, 0.8) 100%
+        );
+        overflow: hidden;
+    }
+
+    .sakura-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 1;
+        opacity: 0.6;
     }
 
     .game-title {
-      font-size: 4rem;
+        font-size: 3rem;
+        font-weight: bold;
+        color: #bd93f9;
+        text-align: center;
+        margin-bottom: 0.5rem;
+        text-shadow: 0 0 15px rgba(189, 147, 249, 0.7);
+        position: relative;
+        z-index: 2;
     }
 
     .game-subtitle {
-      font-size: 1.5rem;
+        font-size: 1.2rem;
+        color: #ff79c6;
+        text-align: center;
+        margin-bottom: 2rem;
+        text-shadow: 0 0 8px rgba(255, 121, 198, 0.5);
+        position: relative;
+        z-index: 2;
     }
-  }
+
+    .game-container::before,
+    .game-container::after {
+        content: "";
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        z-index: 1;
+        opacity: 0.3;
+        pointer-events: none;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .game-container::before {
+        top: 5%;
+        left: 5%;
+        background: radial-gradient(
+            circle,
+            rgba(189, 147, 249, 0.3) 0%,
+            transparent 70%
+        );
+        animation: pulse-rotate 15s infinite linear;
+    }
+
+    .game-container::after {
+        bottom: 5%;
+        right: 5%;
+        background: radial-gradient(
+            circle,
+            rgba(255, 121, 198, 0.3) 0%,
+            transparent 70%
+        );
+        animation: pulse-rotate 20s infinite linear reverse;
+    }
+
+    @keyframes pulse-rotate {
+        0% {
+            transform: rotate(0deg) scale(1);
+        }
+        50% {
+            transform: rotate(180deg) scale(1.05);
+        }
+        100% {
+            transform: rotate(360deg) scale(1);
+        }
+    }
+
+    @media (min-width: 768px) {
+        .game-container {
+            padding: 3rem;
+        }
+
+        .game-title {
+            font-size: 4rem;
+        }
+
+        .game-subtitle {
+            font-size: 1.5rem;
+        }
+    }
 </style>
