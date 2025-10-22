@@ -3,6 +3,7 @@
     import Footer from "../components/Footer.svelte";
     import Header from "../components/Header.svelte";
     import Sakura from "../components/Sakura.svelte";
+    import { injectAnalytics } from '@vercel/analytics/sveltekit';
 
     let y = 0;
     let innerHeight = 0;
