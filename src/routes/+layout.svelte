@@ -5,6 +5,8 @@
     import Sakura from "../components/Sakura.svelte";
     import { injectAnalytics } from '@vercel/analytics/sveltekit';
 
+    injectAnalytics();
+
     let y = 0;
     let innerHeight = 0;
     let innerWidth = 0;
