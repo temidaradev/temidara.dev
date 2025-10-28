@@ -2,5 +2,11 @@
     "buildCommand": "npm run build",
     "outputDirectory": "build",
     "framework": "sveltekit",
-    "installCommand": "npm install"
+    "installCommand": "npm install",
+    "rewrites": [
+        {
+            "source": "^/(?!.*\\.).*$",
+            "destination": "/$1.html"
+        }
+    ]
 }
