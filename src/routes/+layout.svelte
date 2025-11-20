@@ -9,8 +9,8 @@
   import { afterNavigate } from "$app/navigation";
   import { track } from "@vercel/analytics";
 
-  if (browser && !dev) {
-    onMount(() => {
+  onMount(() => {
+    if (browser && !dev) {
       try {
         injectAnalytics();
       } catch (error) {
@@ -24,8 +24,8 @@
           // ignore if track isn't available
         }
       });
-    });
-  }
+    }
+  });
 
   let y = 0;
   let innerHeight = 0;
