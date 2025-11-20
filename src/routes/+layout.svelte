@@ -3,29 +3,25 @@
   import Footer from "../components/Footer.svelte";
   import Header from "../components/Header.svelte";
   import Sakura from "../components/Sakura.svelte";
-  import { onMount } from "svelte";
   import { injectAnalytics } from "@vercel/analytics/sveltekit";
   import { browser, dev } from "$app/environment";
   import { afterNavigate } from "$app/navigation";
   import { track } from "@vercel/analytics";
-
-  onMount(() => {
-    if (browser && !dev) {
-      try {
-        injectAnalytics();
-      } catch (error) {
-        console.debug("Vercel Analytics initialization failed");
-      }
-
-      afterNavigate(() => {
-        try {
-          track("pageview");
-        } catch (e) {
-          // ignore if track isn't available
-        }
-      });
+  if (browser && !dev) {
+    try {
+      injectAnalytics();
+    } catch (error) {
+      console.debug("Vercel Analytics initialization failed");
     }
-  });
+
+    afterNavigate(() => {
+      try {
+        track("pageview");
+      } catch (e) {
+        // ignore if track isn't available
+      }
+    });
+  }
 
   let y = 0;
   let innerHeight = 0;
