@@ -235,14 +235,40 @@
             <i class="fas fa-spinner"></i>
             <span>Android mobile app (WebView)</span>
           </div>
-          <div class="status-item wip">
-            <i class="fas fa-spinner"></i>
+          <div class="status-item completed">
+            <i class="fas fa-check-circle"></i>
             <span>Mail forwarding optimization</span>
           </div>
         </div>
       </div>
 
       <!-- Links -->
+      <div class="readme-section mt-6">
+        <h2 class="section-title">
+          <i class="fas fa-book"></i>
+          Latest README
+        </h2>
+
+        <div class="detail-card">
+          <p class="readme-excerpt">
+            Never lose your receipts again. Forward purchase emails to
+            <code>save@retreat-app.tech</code> and we'll automatically extract receipt
+            and warranty information. Mobile is work in progress.
+          </p>
+          <p class="mt-3">
+            <a
+              href="https://github.com/temidaradev/retreat#readme"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link github"
+            >
+              <i class="fab fa-github"></i>
+              View README on GitHub
+            </a>
+          </p>
+        </div>
+      </div>
+
       <div class="project-links">
         <a
           href="https://github.com/temidaradev/retreat"
